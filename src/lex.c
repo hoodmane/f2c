@@ -234,6 +234,7 @@ LOCAL struct Keylist  keys[ ] =
 	{ "punch",  SPUNCH, YES  },
 	{ "read",  SREAD  },
 	{ "real",  SREAL  },
+	{ "recursive",  SRECURSIVE, YES  },
 	{ "return",  SRETURN  },
 	{ "rewind",  SREWIND  },
 	{ "save",  SSAVE, YES  },

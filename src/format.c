@@ -1912,7 +1912,9 @@ list_decls(FILE *outfile)
 		    case STGBSS:
 		    case STGEQUIV:
 		    case STGCOMMON:
-			nice_printf (outfile, "static ");
+			if (!is_recursive) {
+				nice_printf (outfile, "static ");
+			}
 			break;
 		    case STGEXT:
 			nice_printf (outfile, "extern ");

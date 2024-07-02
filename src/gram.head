@@ -81,6 +81,7 @@ pop_datastack(Void) {
 	struct Nameblock *namval;
 	struct Eqvchain *eqvval;
 	Extsym *extval;
+	int isrec;
 	}
 
 %left SCOMMA
@@ -110,6 +111,7 @@ pop_datastack(Void) {
 %type <expval> ubound simple value callarg complex_const simple_const bit_const
 %type <extval> common comblock entryname progname
 %type <eqvval> equivlist
+%type <isrec> recursive
 
 %%
 
@@ -205,17 +207,17 @@ entry:	  SPROGRAM new_proc progname
 	| SBLOCK new_proc progname
 		{ if($3) NO66("named BLOCKDATA");
 		  startproc($3, CLBLOCK); }
-	| SSUBROUTINE new_proc entryname arglist
-		{ entrypt(CLPROC, TYSUBR, (ftnint) 0,  $3, $4); }
+	| recursive SSUBROUTINE new_proc entryname arglist
+		{ entrypt(CLPROC, TYSUBR, (ftnint) 0,  $4, $5, $1); }
 	| SFUNCTION new_proc entryname arglist
-		{ entrypt(CLPROC, TYUNKNOWN, (ftnint) 0, $3, $4); }
+		{ entrypt(CLPROC, TYUNKNOWN, (ftnint) 0, $3, $4, 0); }
 	| type SFUNCTION new_proc entryname arglist
-		{ entrypt(CLPROC, $1, varleng, $4, $5); }
+		{ entrypt(CLPROC, $1, varleng, $4, $5, 0); }
 	| SENTRY entryname arglist
 		 { if(parstate==OUTSIDE || procclass==CLMAIN
 			|| procclass==CLBLOCK)
 				execerr("misplaced entry statement", CNULL);
-		  entrypt(CLENTRY, 0, (ftnint) 0, $2, $3);
+		  entrypt(CLENTRY, 0, (ftnint) 0, $2, $3, 0);
 		}
 	;
 

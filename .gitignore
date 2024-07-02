@@ -2,3 +2,5 @@
 /src/f2c
 /src/sysdep.hd
 /src/tokdefs.h
+src/gram.in
+src/makefile

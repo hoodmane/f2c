@@ -768,6 +768,7 @@ extern flag allow_i8c;
 #endif /*TYQUAD*/
 extern int n_keywords;
 extern char *c_keywords[];
+extern int is_recursive;
 
 #ifdef KR_headers
 #define Argdcl(x) ()
@@ -852,7 +853,7 @@ void	enddo Argdcl((int));
 void	endio(Void);
 void	endioctl(Void);
 void	endproc(Void);
-void	entrypt Argdcl((int, int, long, Extsym*, chainp));
+void	entrypt Argdcl((int, int, long, Extsym*, chainp, int));
 int	eqn Argdcl((int, char*, char*));
 char*	equiv_name Argdcl((int, char*));
 void	err Argdcl((char*));

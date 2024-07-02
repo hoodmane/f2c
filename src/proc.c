@@ -449,7 +449,7 @@ startproc(Extsym *progname, int Class)
 			/* in case the name is needed to force loading */
 			/* of this block-data subprogram: the name can */
 			/* appear elsewhere in an external statement. */
-			entrypt(CLPROC, TYSUBR, (ftnint)0, progname, (chainp)0);
+			entrypt(CLPROC, TYSUBR, (ftnint)0, progname, (chainp)0, 0);
 			endproc();
 			newproc();
 			}
@@ -514,6 +514,8 @@ newentry(register Namep v, int substmsg)
 	return(p);
 }
 
+int is_recursive = 0;
+
  void
 #ifdef KR_headers
 entrypt(Class, type, length, entry, args)
@@ -522,12 +524,15 @@ entrypt(Class, type, length, entry, args)
 	ftnint length;
 	Extsym *entry;
 	chainp args;
+	int isrec;
 #else
-entrypt(int Class, int type, ftnint length, Extsym *entry, chainp args)
+entrypt(int Class, int type, ftnint length, Extsym *entry, chainp args, int isrec)
 #endif
 {
 	register Namep q;
 	register struct Entrypoint *p;
+
+	is_recursive = isrec;
 
 	if(Class != CLENTRY)
 		puthead( procname = entry->cextname, Class);
