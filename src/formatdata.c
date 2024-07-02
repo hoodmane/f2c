@@ -377,7 +377,11 @@ wr_one_init(FILE *outfile, char *varname, chainp *Values, int keepit)
 	}
     values = *Values;
 
-    nice_printf (outfile, "static %s ", c_type_decl (type, 0));
+	if (is_recursive && 1) {
+    	nice_printf (outfile, "%s ", c_type_decl (type, 0));
+	} else {
+    	nice_printf (outfile, "static %s ", c_type_decl (type, 0));
+	}
 
     if (is_addr)
 	write_nv_ident (outfile, info.addr);
