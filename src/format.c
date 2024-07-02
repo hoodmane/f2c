@@ -1976,6 +1976,10 @@ list_decls(FILE *outfile)
 		    !oneof_stg (var, stg, M(STGEQUIV)|M(STGCOMMON)))
 			comment = wr_ardecls(outfile, var->vdim, 1L);
 		}
+		if (is_recursive && vclass != CLPROC) {
+			// add initializers for non static variables that aren't functions
+			nice_printf (outfile, " = {0}");
+		}
 
 	    if (comment)
 		nice_printf (outfile, "%s", comment);
