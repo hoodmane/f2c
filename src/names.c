@@ -161,26 +161,6 @@ new_arg_length(Namep arg)
 	return buf;
 } /* new_arg_length */
 
-
-/* declare_new_addr -- Add a new local variable to the function, given a
-   pointer to an Addrblock structure (which must have the uname_tag set)
-   This list of idents will be printed in reverse (i.e., chronological)
-   order */
-
- void
-#ifdef KR_headers
-declare_new_addr(addrp)
-	struct Addrblock *addrp;
-#else
-declare_new_addr(struct Addrblock *addrp)
-#endif
-{
-    extern chainp new_vars;
-
-    new_vars = mkchain((char *)cpexpr((expptr)addrp), new_vars);
-} /* declare_new_addr */
-
-
  void
 #ifdef KR_headers
 wr_nv_ident_help(outfile, addrp)

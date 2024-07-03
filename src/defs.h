@@ -48,6 +48,7 @@ typedef struct Addrblock *Addrp;
 typedef struct Constblock *Constp;
 typedef struct Exprblock *Exprp;
 typedef struct Nameblock *Namep;
+typedef struct Declblock *Declp;
 
 extern FILEP infile;
 extern FILEP diagfile;
@@ -465,6 +466,11 @@ struct Nameblock
 	};
 
 
+struct Declblock {
+	Addrp var;
+	expptr value;
+};
+
 /* PARAMETER statements */
 
 struct Paramblock
@@ -792,7 +798,7 @@ int	addressable Argdcl((tagptr));
 tagptr	addrof Argdcl((tagptr));
 char*	addunder Argdcl((char*));
 void	argkludge Argdcl((int*, char***));
-Addrp	autovar Argdcl((int, int, tagptr, char*));
+Addrp	autovar Argdcl((int, int, tagptr, char*, expptr));
 void	backup Argdcl((char*, char*));
 void	bad_atypes Argdcl((Argtypes*, char*, int, int, int, char*, char*));
 int	badchleng Argdcl((tagptr));
@@ -897,6 +903,8 @@ void	frdata Argdcl((chainp));
 void	freetemps(Void);
 void	freqchain Argdcl((struct Equivblock*));
 void	frexchain Argdcl((chainp*));
+void	frdeclchain Argdcl((chainp*));
+void 	frdeclp(Declp*);
 void	frexpr Argdcl((tagptr));
 void	frrpl(Void);
 void	frtemp Argdcl((Addrp));

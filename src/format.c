@@ -1668,6 +1668,7 @@ list_decls(FILE *outfile)
 	chainp nv[TYVOID], nv1[TYVOID];
 	int i, j;
 	ftnint k;
+	Declp Decl;
 	Addrp Var;
 	Namep arg;
 
@@ -1676,10 +1677,9 @@ list_decls(FILE *outfile)
 	for(args = allargs; args; args = args->nextp) {
 		arg = (Namep)args->datap;
 		if (this_var = arg->vlastdim) {
-			frexpr((tagptr)this_var->datap);
-			this_var->datap = 0;
-			}
+			frdeclp((Declp*)(&this_var->datap));
 		}
+	}
 
 	/* sort new_vars by type, skipping entries just zapped */
 
@@ -1687,22 +1687,22 @@ list_decls(FILE *outfile)
 		nv[i] = 0;
 	for(this_var = new_vars; this_var; this_var = next_var) {
 		next_var = this_var->nextp;
-		if (Var = (Addrp)this_var->datap) {
-			if (!(this_var->nextp = nv[j = Var->vtype]))
+		if (Decl = (Declp)this_var->datap) {
+			if (!(this_var->nextp = nv[j = Decl->var->vtype]))
 				nv1[j] = this_var;
 			nv[j] = this_var;
-			}
+		}
 		else {
 			this_var->nextp = 0;
 			frchain(&this_var);
-			}
 		}
+	}
 	new_vars = 0;
 	for(i = TYVOID; --i >= TYADDR;)
 		if (this_var = nv[i]) {
 			nv1[i]->nextp = new_vars;
 			new_vars = this_var;
-			}
+		}
 
 	/* write the declarations */
 
@@ -1710,7 +1710,8 @@ list_decls(FILE *outfile)
 	last_type = -1;
 
 	for (this_var = new_vars; this_var; this_var = this_var -> nextp) {
-	    Var = (Addrp) this_var->datap;
+	    Decl = (Declp) this_var->datap;
+		Var = Decl->var;
 
 	    if (Var == (Addrp) NULL)
 		err ("list_decls:  null variable");
@@ -1743,7 +1744,7 @@ list_decls(FILE *outfile)
 		    || Var -> vclass == CLPROC))
 		nice_printf (outfile, "*");
 
-	    write_nv_ident(outfile, (Addrp)this_var->datap);
+	    write_nv_ident(outfile, ((Declp)this_var->datap)->var);
 	    if (Var -> vtype == TYCHAR && Var->vclass != CLPROC &&
 		    ISICON((Var -> vleng))
 			&& (k = Var->vleng->constblock.Const.ci) > 0)
@@ -2174,14 +2175,12 @@ wr_ardecls(FILE *outfile, struct Dimblock *dimp, long size)
     if (dimp == (struct Dimblock *) NULL)
 		return NULL;
 
-	nice_printf(outfile, "[%ld", size);
+	nice_printf(outfile, "[");
+	expptr out = ICON(1);
     for (i = 0; i < dimp -> ndim; i++) {
-		nice_printf(outfile, "*");
 		expptr dimexpr = dimp -> dims[i].dimexpr;
 		if (dimexpr) {
-			fixtype(dimexpr);
-			printf("  dimexpr\n");
-			expr_out(outfile, cpexpr(dimp -> dims[i].dimexpr));
+			out = mkexpr(OPSTAR, out, cpexpr(dimexpr));
 			continue;
 		}
         expptr this_size = dimp -> dims[i].dimsize;
@@ -2193,12 +2192,14 @@ wr_ardecls(FILE *outfile, struct Dimblock *dimp, long size)
 					j = (ftnint)this_size -> constblock.Const.cd[0];
 			else
 					goto non_const;
-			nice_printf(outfile, "%ld", j);
+			out = mkexpr(OPSTAR, out, ICON(j));
 		} else {
 non_const:
             err ("wr_ardecls:  nonconstant array size");
 		}
     } /* for i = 0 */
+	out = make_int_expr(putx(fixtype(out)));
+	expr_out(outfile, out);
 	nice_printf(outfile, "]");
     return NULL;
 } /* wr_ardecls */

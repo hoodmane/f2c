@@ -495,7 +495,7 @@ endioctl(Void)
 		ioblkp = io_structs[iostmt];
 		if(ioblkp == NULL)
 			io_structs[iostmt] = ioblkp =
-				autovar(1, ios->type, ENULL, "");
+				autovar(1, ios->type, ENULL, "", ENULL);
 		ioset(TYIOINT, XERR, ICON(errbit));
 	}
 
@@ -1140,7 +1140,7 @@ endfmt:
 			temp_name("io_", lastvarno, ioblkp->user.ident));			}
 	else if(!(ioblkp = io_structs[iostmt1]))
 		io_structs[iostmt1] = ioblkp =
-			autovar(1, ios->type, ENULL, "");
+			autovar(1, ios->type, ENULL, "", ENULL);
 
 	ioset(TYIOINT, XERR, ICON(errbit));
 	if(iostmt == IOREAD)

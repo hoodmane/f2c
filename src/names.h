@@ -11,7 +11,6 @@
 extern char *c_keywords[];
 
 char*	c_type_decl Argdcl((int, int));
-void	declare_new_addr Argdcl((Addrp));
 char*	new_arg_length Argdcl((Namep));
 char*	new_func_length Argdcl((void));
 int	nv_type_help Argdcl((Addrp));

@@ -711,6 +711,32 @@ frexchain(register chainp *p)
 		}
 	}
 
+void
+frdeclp(register Declp *p)
+{
+	register chainp q, r;
+	frexpr((expptr)((*p)->var));
+	frexpr((*p)->value);
+	free(*p);
+	*p = NULL;
+}
+
+void
+frdeclchain(register chainp *p)
+{
+	register chainp q, r;
+
+	if (q = *p) {
+		for(;;q = r) {
+			frdeclp((Declp*)(&(q->datap)));
+			if (!(r = q->nextp))
+				break;
+			}
+		q->nextp = chains;
+		chains = *p;
+		*p = 0;
+	}
+}
 
  tagptr
 #ifdef KR_headers

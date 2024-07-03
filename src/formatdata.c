@@ -810,7 +810,8 @@ memno2info(int memno, Namep *info)
     struct Hashentry *entry;
 
     for (this_var = new_vars; this_var; this_var = this_var -> nextp) {
-	Addrp var = (Addrp) this_var->datap;
+	Declp decl = (Declp) this_var->datap;
+	Addrp var = decl->var;
 
 	if (var == (Addrp) NULL)
 	    Fatal("memno2info:  null variable");

@@ -438,7 +438,7 @@ procinit(Void)
 /* Clear the list of newly generated identifiers from the previous
    function */
 
-	frexchain(&new_vars);
+	frdeclchain(&new_vars);
 	frexchain(&used_builtins);
 	frchain(&assigned_fmts);
 	frchain(&allargs);

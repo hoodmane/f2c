@@ -459,6 +459,21 @@ prolog(FILE *outfile, register chainp p)
 /* Compute the base addresses and offsets for the array parameters, and
    assign these values to local variables */
 
+/* Store the variable length of each dimension (which is fixed upon
+   runtime procedure entry) into a local variable */
+			Declp decl;
+			extern chainp new_vars;
+			chainp cur_var = new_vars;
+			while( cur_var ) {
+				decl = (Declp)cur_var->datap;
+				if(decl->value) {
+					write_comment();
+					out_and_free_statement (outfile, make_int_expr(fixtype(mkexpr (OPASSIGN,
+						cpexpr((expptr)decl->var), cpexpr(decl->value)))));
+				} /* if dp -> dims[i].dimexpr */
+				cur_var = cur_var->nextp;
+			}
+
 	addif = addif0 = nentry > 1;
 	for(; p ; p = p->nextp)
 	{
@@ -492,18 +507,7 @@ prolog(FILE *outfile, register chainp p)
 				next_tab(outfile);
 				}
 			}
-		for(i = 0 ; i <= nd; ++i)
 
-/* Store the variable length of each dimension (which is fixed upon
-   runtime procedure entry) into a local variable */
-
-		    if ((Q = dp->dims[i].dimexpr)
-			&& (i < nd || !q->vlastdim)) {
-			expr = (expptr)cpexpr(Q);
-			write_comment();
-			out_and_free_statement (outfile, mkexpr (OPASSIGN,
-				fixtype(cpexpr(dp->dims[i].dimsize)), expr));
-		    } /* if dp -> dims[i].dimexpr */
 
 /* size   will equal the size of a single element, or -1 if the type is
    variable length character type */
@@ -514,19 +518,6 @@ prolog(FILE *outfile, register chainp p)
 			size *= q->vleng->constblock.Const.ci;
 		    else
 			size = -1;
-
-		/* Fudge the argument pointers for arrays so subscripts
-		 * are 0-based. Not done if array bounds are being checked.
-		 */
-		if(dp->basexpr) {
-
-/* Compute the base offset for this procedure */
-
-		    write_comment();
-		    out_and_free_statement (outfile, mkexpr (OPASSIGN,
-			    cpexpr(fixtype(dp->baseoffset)),
-			    cpexpr(fixtype(dp->basexpr))));
-		} /* if dp -> basexpr */
 
 		if(! checksubs) {
 		    if(dp->basexpr) {

@@ -811,7 +811,7 @@ doentry(struct Entrypoint *ep)
 		if (!xretslot[TYCHAR]) {
 			xretslot[TYCHAR] = rs =
 				autovar(0, type, ISCONST(np->vleng)
-					? np->vleng : ICON(0), "");
+					? np->vleng : ICON(0), "", EXNULL);
 			strcpy(rs->user.ident, "ret_val");
 			}
 	}
@@ -822,7 +822,7 @@ doentry(struct Entrypoint *ep)
 	else if( ISCOMPLEX(type) ) {
 		if (!xretslot[type])
 			xretslot[type] =
-				autovar(0, type, EXNULL, " ret_val");
+				autovar(0, type, EXNULL, " ret_val", EXNULL);
 				/* the blank is for use in out_addr */
 		np->vstg = STGARG;
 		if(cxslot < 0)
@@ -836,7 +836,7 @@ doentry(struct Entrypoint *ep)
 			}
 		if (!xretslot[type])
 			xretslot[type] = retslot =
-				autovar(1, type, EXNULL, " ret_val");
+				autovar(1, type, EXNULL, " ret_val", EXNULL);
 				/* the blank is for use in out_addr */
 		np->vstg = STGAUTO;
 		}
@@ -921,10 +921,8 @@ dim_check(Namep q)
 {
 	register struct Dimblock *vdim = q->vdim;
 	register expptr nelt;
-
-	if(!(nelt = vdim->nelt) || !ISCONST(nelt))
-		dclerr("adjustable dimension on non-argument", q);
-	else if (!ONEOF(nelt->headblock.vtype, MSKINT|MSKREAL))
+	nelt = vdim->nelt;
+	if (!ONEOF(nelt->headblock.vtype, MSKINT|MSKREAL))
 		bad_dimtype(q);
 	else if (ISINT(nelt->headblock.vtype)
 			? nelt->constblock.Const.ci <= 0
@@ -1237,7 +1235,7 @@ autovar(nelt0, t, lengp, name)
 	expptr lengp;
 	char *name;
 #else
-autovar(register int nelt0, register int t, expptr lengp, char *name)
+autovar(register int nelt0, register int t, expptr lengp, char *name, expptr init)
 #endif
 {
 	ftnint leng;
@@ -1274,8 +1272,17 @@ autovar(register int nelt0, register int t, expptr lengp, char *name)
 		q->uname_tag = UNAM_IDENT;
 		temp_name(av_pfix[t], ++autonum[t], q->user.ident);
 		}
-	if (nelt0 > 0)
-		declare_new_addr (q);
+	if (nelt0 == 0)
+		return q;
+
+	Declp decl;
+
+	decl = ALLOC(Declblock);
+	decl->var = (Addrp)cpexpr((expptr)q);
+	decl->value = init;
+
+    extern chainp new_vars;
+    new_vars = mkchain((char *)decl, new_vars);
 	return(q);
 }
 
@@ -1332,7 +1339,7 @@ mktmpn(int nelt, register int type, expptr lengp)
 			return(q);
 		}
 	}
-	q = autovar(nelt, type, lengp, "");
+	q = autovar(nelt, type, lengp, "", EXNULL);
 	return(q);
 }
 
@@ -1509,7 +1516,7 @@ settype(register Namep v, register int type, register ftnint length)
 					&& !xretslot[type]) {
 				xretslot[type] = autovar(ONEOF(type,
 					MSKCOMPLEX|MSKCHAR) ? 0 : 1, type,
-					v->vleng, " ret_val");
+					v->vleng, " ret_val", EXNULL);
 				if (procclass == CLMAIN)
 					errstr(
 				"illegal use of %.60s (main program name)",
@@ -1748,7 +1755,6 @@ setbound(Namep v, int nd, struct Dims *dims)
 		}
 		else
 		{
-
 			if(dims[i].lb)
 			{
 				q = mkexpr(OPMINUS, q, cpexpr(dims[i].lb));
@@ -1761,8 +1767,7 @@ setbound(Namep v, int nd, struct Dims *dims)
 			}
 			else {
 				sprintf(buf, " %s_dim%d", v->fvarname, i+1);
-				p->dims[i].dimsize = (expptr)
-					autovar(1, tyint, EXNULL, buf);
+				p->dims[i].dimsize = (expptr) autovar(1, tyint, EXNULL, buf, cpexpr(q));
 				p->dims[i].dimexpr = q;
 				if (i == nd)
 					v->vlastdim = new_vars;
@@ -1793,7 +1798,7 @@ setbound(Namep v, int nd, struct Dims *dims)
 			else
 				q = mkexpr(OPSTAR, cpexpr(p->dims[i].dimsize), q);
 			q = mkexpr(OPPLUS, t, q);
-			}
+		}
 	}
 
 	if( ISCONST(q) )
@@ -1804,7 +1809,7 @@ setbound(Namep v, int nd, struct Dims *dims)
 	else
 	{
 		sprintf(buf, " %s_offset", v->fvarname);
-		p->baseoffset = (expptr) autovar(1, tyint, EXNULL, buf);
+		p->baseoffset = (expptr) autovar(1, tyint, EXNULL, buf, cpexpr(q));
 		p->basexpr = q;
 		v->vdimfinish = 1;
 	}
