@@ -39,11 +39,6 @@ type:	  typespec lengspec
 		{ varleng = $2; }
 	;
 
-recursive:
-	{ $$ = 0; }
-	| SRECURSIVE { $$ = 1;  needkwd = 1; }
-	;
-
 typespec:  typename
 		{ varleng = ($1<0 || ONEOF($1,M(TYLOGICAL)|M(TYLONG))
 				? 0 : typesize[$1]);

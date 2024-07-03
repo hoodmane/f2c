@@ -54,6 +54,7 @@ use or performance of this software.
 #define FIRSTTOKEN	2
 #define OTHERTOKEN	3
 #define RETEOS	4
+#define AFTERRECURSIVE	5
 
 
 LOCAL int stkey;	/* Type of the current statement (DO, END, IF, etc) */
@@ -530,10 +531,16 @@ yylex(Void)
 
 first:
 	case FIRSTTOKEN :	/* first step on a statement */
+		tokno = 0;
+	case AFTERRECURSIVE:
 		analyz();
-		lexstate = OTHERTOKEN;
-		tokno = 1;
+		tokno ++;
 		retval = stkey;
+		if (stkey == SRECURSIVE) {
+			lexstate = AFTERRECURSIVE;
+		} else {
+			lexstate = OTHERTOKEN;
+		}
 		break;
 
 	case OTHERTOKEN :	/* return next token */
