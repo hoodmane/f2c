@@ -1978,7 +1978,7 @@ list_decls(FILE *outfile)
 		}
 		if (is_recursive && vclass != CLPROC) {
 			// add initializers for non static variables that aren't functions
-			nice_printf (outfile, " = {0}");
+			nice_printf (outfile, " = {}");
 		}
 
 	    if (comment)
@@ -2170,39 +2170,37 @@ wr_ardecls(FILE *outfile, struct Dimblock *dimp, long size)
 {
     int i, k;
     ftnint j;
-    static char buf[1000];
 
     if (dimp == (struct Dimblock *) NULL)
-	return NULL;
+		return NULL;
 
-    sprintf(buf, "\t/* was ");	/* would like to say  k = sprintf(...), but */
-    k = strlen(buf);		/* BSD doesn't return char transmitted count */
-
+	nice_printf(outfile, "[%ld", size);
     for (i = 0; i < dimp -> ndim; i++) {
-	expptr this_size = dimp -> dims[i].dimsize;
-
-	if (ISCONST(this_size)) {
-		if (ISINT(this_size->constblock.vtype))
-			j = this_size -> constblock.Const.ci;
-		else if (ISREAL(this_size->constblock.vtype))
-			j = (ftnint)this_size -> constblock.Const.cd[0];
-		else
-			goto non_const;
-		size *= j;
-	   	sprintf(buf+k, "[%ld]", j);
-	    	k += strlen(buf+k);
-		/* BSD prevents getting strlen from sprintf */
+		nice_printf(outfile, "*");
+		expptr dimexpr = dimp -> dims[i].dimexpr;
+		if (dimexpr) {
+			fixtype(dimexpr);
+			printf("  dimexpr\n");
+			expr_out(outfile, cpexpr(dimp -> dims[i].dimexpr));
+			continue;
 		}
-	else {
- non_const:
-	    err ("wr_ardecls:  nonconstant array size");
+        expptr this_size = dimp -> dims[i].dimsize;
+
+        if (ISCONST(this_size)) {
+			if (ISINT(this_size->constblock.vtype))
+					j = this_size -> constblock.Const.ci;
+			else if (ISREAL(this_size->constblock.vtype))
+					j = (ftnint)this_size -> constblock.Const.cd[0];
+			else
+					goto non_const;
+			nice_printf(outfile, "%ld", j);
+		} else {
+non_const:
+            err ("wr_ardecls:  nonconstant array size");
 		}
     } /* for i = 0 */
-
-    nice_printf (outfile, "[%ld]", size);
-    strcat(buf+k, " */");
-
-    return (i > 1) ? buf : NULL;
+	nice_printf(outfile, "]");
+    return NULL;
 } /* wr_ardecls */
 
 
