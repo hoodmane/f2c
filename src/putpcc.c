@@ -1216,6 +1216,88 @@ addrfix(expptr e)
 	return e->tag == TADDR ? mkexpr(OPIDENTITY, e, ENULL) : e;
 	}
 
+
+/**
+ * Suppress ftnlen args from certain CLAPACK functions
+ *
+ * We need to suppress the ftnlen args from "lsame" and "c", "d", "s", or "z"
+ * followed by one of:
+ *
+ * "gemm", "ggbak", "gghrd",
+ * "lacpy", "lamch", "lanhs", "lanst", "larf", "lascl", "laset", "lasr",
+ * "ormqr", "orm2r",
+ * "steqr", "stevr",
+ * "trevc", "trmm", "trsen", "trsv",
+ * "unm2r", "unmqr"
+ */
+
+int
+should_add_ftnlen(expptr funcname) {
+	char buf[MAXNAMELEN + 1];
+	FILE* buffp = fmemopen(buf, MAXNAMELEN + 1, "w");
+	expr_out(buffp, cpexpr(funcname));
+	fclose(buffp);
+	char c0 = buf[0];
+	int len = strlen(buf);
+	// ignore trailing _
+	if (buf[len - 1] == '_') {
+		buf[len - 1] = 0;
+		len --;
+	}
+	// length 5 or 6
+	if (len < 5 || len > 6) {
+		return 1;
+	}
+	// Skip lsame or lsame_
+	if (c0 == 'l') {
+		return strcmp(buf, "lsame") != 0;
+	}
+	if ((c0 != 'c') && (c0 != 'd') && (c0 != 's') && (c0 != 'z')) {
+		return 1;
+	}
+	char c1 = buf[1];
+	char *rest = buf + 2;
+
+#define C(str) strcmp(rest, str)
+
+	if (c1 == 'g') {
+		// "gbtrs", "gemm", "gesdd", "getrs", "ggbak", "gghrd"
+		return C("btrs") && C("emm") && C("esdd") && C("etrs") && C("emv") && C("gbak") && C("gbak");
+	}
+	if (c1 == 'l') {
+		// "lacpy", "lamch", "lanhs", "lanst", "larf", "lascl", "laset", "lasr", "lasrt",
+		// All share an extra leading 'a'
+		if (rest[0] != 'a') {
+			return 1;
+		}
+		rest ++;
+		return C("cpy") && C("mch") && C("nhs") && C("nst") && C("rf") && C("scl") && C("set") && C("sr") && C("srt");
+	}
+	if (c1 == 'o') {
+		// "ormqr", "orm2r",
+		return C("rmqr") && C("rm2r");
+	}
+	if (c1 == 's') {
+		// "steqr", "stevr"
+		return C("teqr") && C("tevr");
+	}
+	if (c1 == 't') {
+		// "trevc", "trmm", "trsen", "trsv",
+		// All share an extra leading 'r'
+		if (rest[0] != 'r') {
+			return 1;
+		}
+		rest ++;
+		return C("evc") && C("mm") && C("sen") && C("sv");
+	}
+	if (c1 == 'u') {
+		// "unm2r", "unmqr"
+		return C("nm2r") && C("nmqr");
+	}
+	return 1;
+#undef C
+}
+
  LOCAL int
 #ifdef KR_headers
 typekludge(ccall, q, at, j)
@@ -1889,7 +1971,9 @@ putcall(expptr p0, Addrp *temp)
 
 /* ... and add them to the end of the argument list */
 
-    hookup (arglist, charsp);
+	if (should_add_ftnlen(p->leftp)) {
+    	hookup (arglist, charsp);
+	}
 
 /* Return the name of the temporary used to hold the results, if any was
    necessary. */
