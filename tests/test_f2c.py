@@ -24,7 +24,7 @@ def clean_file(file: Path) -> None:
 def diff_output(out, expected):
     clean_file(out)
     clean_file(expected)
-    res = run(["git", "diff", "--no-index", expected, out], capture_output=True)
+    res = run(["git", "diff", "--no-index", "--color", expected, out], capture_output=True, encoding="utf8")
     if res.returncode != 0:
         print(res.stdout)
         assert False
