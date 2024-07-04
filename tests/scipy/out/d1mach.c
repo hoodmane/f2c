@@ -16,7 +16,7 @@
 
 struct {
     integer cray1[38];
-} d9mach_;
+} d9mach_ __attribute__((weak));
 
 #define d9mach_1 d9mach_
 

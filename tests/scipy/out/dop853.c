@@ -21,7 +21,7 @@ union {
     struct {
 	doublereal xold, h__;
     } _2;
-} condo8_;
+} condo8_ __attribute__((weak));
 
 #define condo8_1 (condo8_._1)
 #define condo8_2 (condo8_._2)

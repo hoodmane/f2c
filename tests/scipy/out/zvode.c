@@ -28,7 +28,7 @@ union {
 	doublereal rvod1[50];
 	integer ivod1[33];
     } _2;
-} zvod01_;
+} zvod01_ __attribute__((weak));
 
 #define zvod01_1 (zvod01_._1)
 #define zvod01_2 (zvod01_._2)
@@ -42,7 +42,7 @@ union {
 	doublereal rvod2[1];
 	integer ivod2[8];
     } _2;
-} zvod02_;
+} zvod02_ __attribute__((weak));
 
 #define zvod02_1 (zvod02_._1)
 #define zvod02_2 (zvod02_._2)

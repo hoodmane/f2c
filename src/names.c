@@ -541,14 +541,14 @@ wr_common_decls(FILE *outfile)
 		if (which == UNION_STRUCT)
 		    nice_printf (outfile, "} _%d;\n", count);
 		else if (which == ONE_STRUCT)
-		    nice_printf (outfile, "} %s;\n", ext->cextname);
+		    nice_printf (outfile, "} %s __attribute__((weak));\n", ext->cextname);
 		else
 		    nice_printf (outfile, "};\n");
 	    } /* for */
 
 	    if (which == UNION_STRUCT) {
 		prev_tab (c_file);
-		nice_printf (outfile, "} %s;\n", ext->cextname);
+		nice_printf (outfile, "} %s __attribute__((weak));\n", ext->cextname);
 	    } /* if */
 	    did_one = 1;
 	    nice_printf (outfile, "\n");
