@@ -4,3 +4,5 @@
 /src/tokdefs.h
 src/gram.in
 src/makefile
+__pycache__
+.venv
