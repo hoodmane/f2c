@@ -8,7 +8,7 @@ F2C = TEST_DIR.parent / "src/f2c"
 
 
 def f2c_input(outdir: Path, input: Path) -> Path:
-    res = run([F2C, input.resolve()], cwd=outdir, check=False, capture_output=True)
+    res = run([F2C, "-R", input.resolve()], cwd=outdir, check=False, capture_output=True)
     if res.returncode:
         print("f2c failed", input.name)
         print(res.stdout)
