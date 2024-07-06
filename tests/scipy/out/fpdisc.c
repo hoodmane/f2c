@@ -20,13 +20,13 @@
 
     /* Local variables */
     doublereal h__[12] = {};
-    integer i__ = {}, j = {}, k = {}, l = {}, k1 = {};
-    doublereal an = {};
-    integer ik = {}, jk = {}, lj = {}, lk = {}, lp = {}, nk1 = {};
-    doublereal fac = {};
-    integer lmk = {};
-    doublereal prod = {};
-    integer nrint = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, k1 = {0};
+    doublereal an = {0};
+    integer ik = {0}, jk = {0}, lj = {0}, lk = {0}, lp = {0}, nk1 = {0};
+    doublereal fac = {0};
+    integer lmk = {0};
+    doublereal prod = {0};
+    integer nrint = {0};
 
 /*  subroutine fpdisc calculates the discontinuity jumps of the kth */
 /*  derivative of the b-splines of degree k at the knots t(k+2)..t(n-k-1) */

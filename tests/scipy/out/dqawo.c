@@ -23,14 +23,14 @@ static integer c__26 = 26;
 	integer *ier, integer *leniw, integer *maxp1, integer *lenw, integer *
 	last, integer *iwork, doublereal *work)
 {
-    integer l1 = {}, l2 = {}, l3 = {}, l4 = {}, lvl = {}, limit = {};
+    integer l1 = {0}, l2 = {0}, l3 = {0}, l4 = {0}, lvl = {0}, limit = {0};
     extern /* Recursive Subroutine */ int dqawoe_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *,
 	     integer *, integer *, integer *, doublereal *, doublereal *, 
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, integer *, integer *, integer *, 
 	    doublereal *);
-    integer momcom = {};
+    integer momcom = {0};
     extern /* Recursive Subroutine */ int xerror_(char *, integer *, integer *
 	    , integer *, ftnlen);
 

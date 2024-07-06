@@ -19,8 +19,8 @@
     integer a_dim1, a_offset, i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, m = {}, i1 = {}, k1 = {};
-    doublereal store = {};
+    integer i__ = {0}, j = {0}, l = {0}, m = {0}, i1 = {0}, k1 = {0};
+    doublereal store = {0};
 
 /*  subroutine fpback calculates the solution of the system of */
 /*  equations a*c = z with a a n x n upper triangular matrix */

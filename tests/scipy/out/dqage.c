@@ -28,8 +28,8 @@ static integer c__1 = 1;
     doublereal d__1, d__2;
 
     /* Local variables */
-    integer k = {};
-    doublereal a1 = {}, a2 = {}, b1 = {}, b2 = {}, area = {};
+    integer k = {0};
+    doublereal a1 = {0}, a2 = {0}, b1 = {0}, b2 = {0}, area = {0};
     extern /* Recursive Subroutine */ int dqk21_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *), dqk31_(D_fp, doublereal *, doublereal *, 
@@ -41,17 +41,17 @@ static integer c__1 = 1;
 	    doublereal *, doublereal *, doublereal *, doublereal *), dqk61_(
 	    D_fp, doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    integer keyf = {};
-    doublereal area1 = {}, area2 = {}, area12 = {}, erro12 = {}, defab1 = {}, 
-	    defab2 = {};
-    integer nrmax = {};
-    doublereal uflow = {};
+    integer keyf = {0};
+    doublereal area1 = {0}, area2 = {0}, area12 = {0}, erro12 = {0}, defab1 = 
+	    {0}, defab2 = {0};
+    integer nrmax = {0};
+    doublereal uflow = {0};
     extern doublereal d1mach_(integer *);
-    integer iroff1 = {}, iroff2 = {};
-    doublereal error1 = {}, error2 = {}, defabs = {}, epmach = {}, errbnd = {}
-	    , resabs = {}, errmax = {};
-    integer maxerr = {};
-    doublereal errsum = {};
+    integer iroff1 = {0}, iroff2 = {0};
+    doublereal error1 = {0}, error2 = {0}, defabs = {0}, epmach = {0}, errbnd 
+	    = {0}, resabs = {0}, errmax = {0};
+    integer maxerr = {0};
+    doublereal errsum = {0};
     extern /* Recursive Subroutine */ int dqpsrt_(integer *, integer *, 
 	    integer *, doublereal *, doublereal *, integer *, integer *);
 

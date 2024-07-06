@@ -21,12 +21,12 @@
 
     /* Local variables */
     doublereal h__[20] = {};
-    integer i__ = {}, j = {}, l = {}, k1 = {}, l1 = {}, k2 = {};
-    doublereal tb = {};
-    integer ll = {};
-    doublereal te = {}, sp = {};
-    integer nk1 = {};
-    doublereal arg = {};
+    integer i__ = {0}, j = {0}, l = {0}, k1 = {0}, l1 = {0}, k2 = {0};
+    doublereal tb = {0};
+    integer ll = {0};
+    doublereal te = {0}, sp = {0};
+    integer nk1 = {0};
+    doublereal arg = {0};
     extern /* Recursive Subroutine */ int fpbspl_(doublereal *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *);
 

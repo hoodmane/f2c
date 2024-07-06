@@ -29,9 +29,9 @@ doublereal enorm_(integer *n, doublereal *x)
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {};
-    doublereal s1 = {}, s2 = {}, s3 = {}, xabs = {}, x1max = {}, x3max = {}, 
-	    agiant = {}, floatn = {};
+    integer i__ = {0};
+    doublereal s1 = {0}, s2 = {0}, s3 = {0}, xabs = {0}, x1max = {0}, x3max = 
+	    {0}, agiant = {0}, floatn = {0};
 
 /*     ********** */
 

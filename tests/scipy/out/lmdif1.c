@@ -21,16 +21,16 @@
     doublereal factor = 100.;
     doublereal zero = 0.;
 
-    integer mp5n = {}, mode = {}, nfev = {};
-    doublereal ftol = {}, gtol = {}, xtol = {};
+    integer mp5n = {0}, mode = {0}, nfev = {0};
+    doublereal ftol = {0}, gtol = {0}, xtol = {0};
     extern /* Recursive Subroutine */ int lmdif_(U_fp, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, integer *, doublereal *, doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *, doublereal *, 
 	    integer *, integer *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    doublereal epsfcn = {};
-    integer maxfev = {}, nprint = {};
+    doublereal epsfcn = {0};
+    integer maxfev = {0}, nprint = {0};
 
 /*     ********** */
 

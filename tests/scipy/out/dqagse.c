@@ -29,36 +29,36 @@ static integer c__2 = 2;
     doublereal d__1, d__2;
 
     /* Local variables */
-    integer k = {};
-    doublereal a1 = {}, a2 = {}, b1 = {}, b2 = {};
-    integer id = {};
-    doublereal area = {};
+    integer k = {0};
+    doublereal a1 = {0}, a2 = {0}, b1 = {0}, b2 = {0};
+    integer id = {0};
+    doublereal area = {0};
     extern /* Recursive Subroutine */ int dqk21_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *);
-    doublereal dres = {};
-    integer ksgn = {}, nres = {};
-    doublereal area1 = {}, area2 = {}, area12 = {};
+    doublereal dres = {0};
+    integer ksgn = {0}, nres = {0};
+    doublereal area1 = {0}, area2 = {0}, area12 = {0};
     extern /* Recursive Subroutine */ int dqelg_(integer *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *);
-    doublereal small = {}, erro12 = {};
-    integer ierro = {};
-    doublereal defab1 = {}, defab2 = {};
-    integer ktmin = {}, nrmax = {};
-    doublereal oflow = {}, uflow = {};
+    doublereal small = {0}, erro12 = {0};
+    integer ierro = {0};
+    doublereal defab1 = {0}, defab2 = {0};
+    integer ktmin = {0}, nrmax = {0};
+    doublereal oflow = {0}, uflow = {0};
     extern doublereal d1mach_(integer *);
-    logical noext = {};
-    integer iroff1 = {}, iroff2 = {}, iroff3 = {};
-    doublereal res3la[3] = {}, error1 = {}, error2 = {}, rlist2[52] = {};
-    integer numrl2 = {};
-    doublereal defabs = {}, epmach = {}, erlarg = {}, abseps = {}, correc = {}
-	    , errbnd = {}, resabs = {};
-    integer jupbnd = {};
-    doublereal erlast = {}, errmax = {};
-    integer maxerr = {};
-    doublereal reseps = {};
-    logical extrap = {};
-    doublereal ertest = {}, errsum = {};
+    logical noext = {0};
+    integer iroff1 = {0}, iroff2 = {0}, iroff3 = {0};
+    doublereal res3la[3] = {}, error1 = {0}, error2 = {0}, rlist2[52] = {};
+    integer numrl2 = {0};
+    doublereal defabs = {0}, epmach = {0}, erlarg = {0}, abseps = {0}, correc 
+	    = {0}, errbnd = {0}, resabs = {0};
+    integer jupbnd = {0};
+    doublereal erlast = {0}, errmax = {0};
+    integer maxerr = {0};
+    doublereal reseps = {0};
+    logical extrap = {0};
+    doublereal ertest = {0}, errsum = {0};
     extern /* Recursive Subroutine */ int dqpsrt_(integer *, integer *, 
 	    integer *, doublereal *, doublereal *, integer *, integer *);
 

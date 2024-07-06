@@ -26,15 +26,15 @@
     integer fjac_dim1, fjac_offset;
 
     /* Local variables */
-    integer mode = {}, nfev = {}, njev = {};
-    doublereal ftol = {}, gtol = {}, xtol = {};
+    integer mode = {0}, nfev = {0}, njev = {0};
+    doublereal ftol = {0}, gtol = {0}, xtol = {0};
     extern /* Recursive Subroutine */ int lmstr_(U_fp, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *, doublereal *,
 	     doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *, integer *, integer 
 	    *, doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *);
-    integer maxfev = {}, nprint = {};
+    integer maxfev = {0}, nprint = {0};
 
 /*     ********** */
 

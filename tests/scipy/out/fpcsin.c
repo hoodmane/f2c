@@ -20,10 +20,10 @@
     doublereal d__1;
 
     /* Local variables */
-    integer i__ = {}, j = {};
-    doublereal b2 = {}, b4 = {}, f1 = {}, f2 = {}, ab = {}, ai = {}, ab4 = {},
-	     fac = {}, one = {}, eps = {}, six = {}, two = {}, alfa = {}, 
-	    beta = {}, three = {}, quart = {};
+    integer i__ = {0}, j = {0};
+    doublereal b2 = {0}, b4 = {0}, f1 = {0}, f2 = {0}, ab = {0}, ai = {0}, 
+	    ab4 = {0}, fac = {0}, one = {0}, eps = {0}, six = {0}, two = {0}, 
+	    alfa = {0}, beta = {0}, three = {0}, quart = {0};
 
 /*  fpcsin calculates the integrals ress=integral((b-x)**3*sin(par*x)) */
 /*  and resc=integral((b-x)**3*cos(par*x)) over the interval (a,b), */

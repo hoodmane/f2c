@@ -45,30 +45,31 @@ static integer c__1 = 1;
 
     /* Local variables */
     doublereal d__[25] = {};
-    integer i__ = {}, j = {}, k = {}, m = {};
-    doublereal v[28] = {}, d1[25] = {}, d2[25] = {}, p2 = {}, p3 = {}, p4 = {}
-	    , ac = {}, an = {}, as = {}, an2 = {}, ass = {}, par2 = {}, conc =
-	     {}, asap = {}, par22 = {}, fval[25] = {}, estc = {}, cons = {};
-    integer iers = {};
-    doublereal ests = {};
-    integer isym = {}, noeq1 = {};
-    doublereal cheb12[13] = {}, cheb24[25] = {}, resc12 = {}, resc24 = {}, 
-	    hlgth = {}, centr = {};
+    integer i__ = {0}, j = {0}, k = {0}, m = {0};
+    doublereal v[28] = {}, d1[25] = {}, d2[25] = {}, p2 = {0}, p3 = {0}, p4 = 
+	    {0}, ac = {0}, an = {0}, as = {0}, an2 = {0}, ass = {0}, par2 = {
+	    0}, conc = {0}, asap = {0}, par22 = {0}, fval[25] = {}, estc = {0}
+	    , cons = {0};
+    integer iers = {0};
+    doublereal ests = {0};
+    integer isym = {0}, noeq1 = {0};
+    doublereal cheb12[13] = {}, cheb24[25] = {}, resc12 = {0}, resc24 = {0}, 
+	    hlgth = {0}, centr = {0};
     extern /* Recursive Subroutine */ int dqk15w_(D_fp, D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *, doublereal *,
 	     doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *);
-    doublereal ress12 = {}, ress24 = {}, oflow = {};
-    integer noequ = {};
+    doublereal ress12 = {0}, ress24 = {0}, oflow = {0};
+    integer noequ = {0};
     extern /* Recursive Subroutine */ int dgtsv_(integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, integer *,
 	     integer *);
     extern doublereal d1mach_(integer *);
     extern /* Recursive Subroutine */ int dqcheb_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    doublereal cospar = {};
+    doublereal cospar = {0};
     extern doublereal dqwgtf_();
-    doublereal parint = {}, sinpar = {};
+    doublereal parint = {0}, sinpar = {0};
 
 /* ***begin prologue  dqc25f */
 /* ***date written   810101   (yymmdd) */

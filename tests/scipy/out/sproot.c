@@ -20,17 +20,17 @@
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {};
-    doublereal y[3] = {}, a0 = {}, a1 = {}, a2 = {}, a3 = {}, b0 = {}, b1 = {}
-	    , c1 = {}, c2 = {}, c3 = {}, c4 = {};
-    integer j1 = {};
-    doublereal c5 = {}, d4 = {}, d5 = {}, h1 = {}, h2 = {};
-    integer n4 = {};
-    doublereal t1 = {}, t2 = {}, t3 = {}, t4 = {}, t5 = {};
-    logical z0 = {}, z1 = {}, z2 = {}, z3 = {}, z4 = {};
-    doublereal ah = {}, bh = {}, zz = {};
-    logical nz0 = {}, nz1 = {}, nz2 = {}, nz3 = {}, nz4 = {};
-    doublereal two = {}, three = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal y[3] = {}, a0 = {0}, a1 = {0}, a2 = {0}, a3 = {0}, b0 = {0}, 
+	    b1 = {0}, c1 = {0}, c2 = {0}, c3 = {0}, c4 = {0};
+    integer j1 = {0};
+    doublereal c5 = {0}, d4 = {0}, d5 = {0}, h1 = {0}, h2 = {0};
+    integer n4 = {0};
+    doublereal t1 = {0}, t2 = {0}, t3 = {0}, t4 = {0}, t5 = {0};
+    logical z0 = {0}, z1 = {0}, z2 = {0}, z3 = {0}, z4 = {0};
+    doublereal ah = {0}, bh = {0}, zz = {0};
+    logical nz0 = {0}, nz1 = {0}, nz2 = {0}, nz3 = {0}, nz4 = {0};
+    doublereal two = {0}, three = {0};
     extern /* Recursive Subroutine */ int fpcuro_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *);
 

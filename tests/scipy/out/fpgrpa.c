@@ -36,19 +36,19 @@ static integer c__4 = 4;
 
     /* Local variables */
     doublereal h__[5] = {};
-    integer i__ = {}, j = {}, k = {}, l = {}, i1 = {}, i2 = {}, k1 = {}, k2 = 
-	    {}, l1 = {}, l2 = {}, k0 = {}, id = {}, ii = {}, n33 = {}, it = {}
-	    , iz = {}, jz = {}, nu4 = {}, nv4 = {}, nu7 = {}, nu8 = {}, nv7 = 
-	    {}, nv8 = {};
-    doublereal fac = {}, arg = {};
-    integer nmd = {};
-    doublereal one = {};
-    integer muu = {}, mvv = {}, nuu = {}, nvv = {};
-    doublereal half = {};
-    integer ncof = {};
-    doublereal term = {};
-    integer numu = {}, numv = {}, numu1 = {}, numv1 = {};
-    doublereal value = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, i1 = {0}, i2 = {0}, k1 = {0}
+	    , k2 = {0}, l1 = {0}, l2 = {0}, k0 = {0}, id = {0}, ii = {0}, n33 
+	    = {0}, it = {0}, iz = {0}, jz = {0}, nu4 = {0}, nv4 = {0}, nu7 = {
+	    0}, nu8 = {0}, nv7 = {0}, nv8 = {0};
+    doublereal fac = {0}, arg = {0};
+    integer nmd = {0};
+    doublereal one = {0};
+    integer muu = {0}, mvv = {0}, nuu = {0}, nvv = {0};
+    doublereal half = {0};
+    integer ncof = {0};
+    doublereal term = {0};
+    integer numu = {0}, numv = {0}, numu1 = {0}, numv1 = {0};
+    doublereal value = {0};
     extern /* Recursive Subroutine */ int fpback_(doublereal *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *), fpbacp_(
 	    doublereal *, doublereal *, doublereal *, integer *, integer *, 
@@ -56,12 +56,12 @@ static integer c__4 = 4;
 	    integer *, integer *, doublereal *, integer *), fpbspl_(
 	    doublereal *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *);
-    integer number = {};
+    integer number = {0};
     extern /* Recursive Subroutine */ int fptrpe_(integer *, integer *, 
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    integer nroldu = {}, nroldv = {};
+    integer nroldu = {0}, nroldv = {0};
     extern /* Recursive Subroutine */ int fptrnp_(integer *, integer *, 
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 

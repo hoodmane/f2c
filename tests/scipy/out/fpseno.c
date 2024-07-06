@@ -20,7 +20,7 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {};
+    integer i__ = {0}, j = {0}, k = {0};
 
 /*  subroutine fpseno fetches a branch of a triply linked tree the */
 /*  information of which is kept in the arrays up,left,right and info. */

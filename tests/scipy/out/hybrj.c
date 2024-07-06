@@ -38,35 +38,35 @@ static logical c_false = FALSE_;
     doublereal d__1, d__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, jm1 = {}, iwa[1] = {};
-    doublereal sum = {};
-    logical sing = {};
-    integer iter = {};
-    doublereal temp = {};
-    integer iflag = {};
-    doublereal delta = {};
+    integer i__ = {0}, j = {0}, l = {0}, jm1 = {0}, iwa[1] = {};
+    doublereal sum = {0};
+    logical sing = {0};
+    integer iter = {0};
+    doublereal temp = {0};
+    integer iflag = {0};
+    doublereal delta = {0};
     extern /* Recursive Subroutine */ int qrfac_(integer *, integer *, 
 	    doublereal *, integer *, logical *, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *);
-    logical jeval = {};
-    integer ncsuc = {};
-    doublereal ratio = {};
+    logical jeval = {0};
+    integer ncsuc = {0};
+    doublereal ratio = {0};
     extern doublereal enorm_(integer *, doublereal *);
-    doublereal fnorm = {};
+    doublereal fnorm = {0};
     extern /* Recursive Subroutine */ int qform_(integer *, integer *, 
 	    doublereal *, integer *, doublereal *);
-    doublereal pnorm = {}, xnorm = {}, fnorm1 = {};
+    doublereal pnorm = {0}, xnorm = {0}, fnorm1 = {0};
     extern /* Recursive Subroutine */ int r1updt_(integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *, doublereal *,
 	     logical *);
-    integer nslow1 = {}, nslow2 = {};
+    integer nslow1 = {0}, nslow2 = {0};
     extern /* Recursive Subroutine */ int r1mpyq_(integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *);
-    integer ncfail = {};
+    integer ncfail = {0};
     extern /* Recursive Subroutine */ int dogleg_(integer *, doublereal *, 
 	    integer *, doublereal *, doublereal *, doublereal *, doublereal *,
 	     doublereal *, doublereal *);
-    doublereal actred = {}, epsmch = {}, prered = {};
+    doublereal actred = {0}, epsmch = {0}, prered = {0};
     extern doublereal dpmpar_(integer *);
 
 /*     ********** */

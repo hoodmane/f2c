@@ -30,11 +30,11 @@
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {}, jp1 = {}, kp1 = {};
-    doublereal tan__ = {}, cos__ = {}, sin__ = {}, sum = {}, temp = {}, cotan 
-	    = {};
-    integer nsing = {};
-    doublereal qtbpj = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, jp1 = {0}, kp1 = {0};
+    doublereal tan__ = {0}, cos__ = {0}, sin__ = {0}, sum = {0}, temp = {0}, 
+	    cotan = {0};
+    integer nsing = {0};
+    doublereal qtbpj = {0};
 
 /*     ********** */
 

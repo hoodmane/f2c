@@ -32,19 +32,19 @@ static integer c__1 = 1;
 
     /* Local variables */
     doublereal a[36] = {}, g[6] = {};
-    integer i__ = {}, j = {}, l = {}, i1 = {}, l1 = {}, l2 = {}, mm = {}, lq =
-	     {}, nr[6] = {};
-    doublereal sq = {};
-    integer id0 = {}, la0 = {}, la1 = {}, lb0 = {}, lb1 = {}, lc0 = {}, lc1 = 
-	    {}, id1 = {};
-    doublereal sq0 = {}, sq1 = {};
-    integer lau = {}, lbu = {}, lbv = {}, lcs = {}, lri = {};
-    doublereal drr[6] = {}, sqq = {};
-    integer lsu = {}, lsv = {};
+    integer i__ = {0}, j = {0}, l = {0}, i1 = {0}, l1 = {0}, l2 = {0}, mm = {
+	    0}, lq = {0}, nr[6] = {};
+    doublereal sq = {0};
+    integer id0 = {0}, la0 = {0}, la1 = {0}, lb0 = {0}, lb1 = {0}, lc0 = {0}, 
+	    lc1 = {0}, id1 = {0};
+    doublereal sq0 = {0}, sq1 = {0};
+    integer lau = {0}, lbu = {0}, lbv = {0}, lcs = {0}, lri = {0};
+    doublereal drr[6] = {}, sqq = {0};
+    integer lsu = {0}, lsv = {0};
     doublereal sum[6] = {};
-    integer lav1 = {}, lav2 = {}, iop0 = {}, iop1 = {}, mvnu = {};
-    doublereal step1 = {}, step2 = {}, delta[6] = {}, three = {};
-    integer number = {};
+    integer lav1 = {0}, lav2 = {0}, iop0 = {0}, iop1 = {0}, mvnu = {0};
+    doublereal step1 = {0}, step2 = {0}, delta[6] = {}, three = {0};
+    integer number = {0};
     extern /* Recursive Subroutine */ int fpgrsp_(integer *, integer *, 
 	    integer *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 

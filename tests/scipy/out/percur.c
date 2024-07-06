@@ -21,11 +21,11 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, i1 = {}, i2 = {}, j1 = {}, j2 = {}, k1 = {}, k2 = {}, 
-	    m1 = {}, ib = {}, iq = {}, iz = {}, ia1 = {}, ia2 = {}, ig1 = {}, 
-	    ig2 = {}, ifp = {};
-    doublereal per = {}, tol = {};
-    integer nmin = {}, maxit = {}, lwest = {};
+    integer i__ = {0}, i1 = {0}, i2 = {0}, j1 = {0}, j2 = {0}, k1 = {0}, k2 = 
+	    {0}, m1 = {0}, ib = {0}, iq = {0}, iz = {0}, ia1 = {0}, ia2 = {0},
+	     ig1 = {0}, ig2 = {0}, ifp = {0};
+    doublereal per = {0}, tol = {0};
+    integer nmin = {0}, maxit = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchep_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpperi_(integer *,
 	     doublereal *, doublereal *, doublereal *, integer *, integer *, 

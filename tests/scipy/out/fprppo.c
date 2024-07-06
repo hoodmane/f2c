@@ -20,8 +20,8 @@
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {}, ii = {}, nu4 = {}, nvv = {}, 
-	    iopt = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, ii = {0}, nu4 = {0}, nvv = {
+	    0}, iopt = {0};
 
 /*  given the coefficients of a constrained bicubic spline, as determined */
 /*  in subroutine fppola, subroutine fprppo calculates the coefficients */

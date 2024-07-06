@@ -51,12 +51,13 @@ static doublereal c_b6 = 1.5;
     double pow_dd(doublereal *, doublereal *);
 
     /* Local variables */
-    integer j = {};
-    doublereal fc = {}, fv1[7] = {}, fv2[7] = {}, absc = {}, dinf = {}, resg =
-	     {}, resk = {}, fsum = {}, absc1 = {}, absc2 = {}, fval1 = {}, 
-	    fval2 = {}, hlgth = {}, centr = {}, reskh = {}, uflow = {};
+    integer j = {0};
+    doublereal fc = {0}, fv1[7] = {}, fv2[7] = {}, absc = {0}, dinf = {0}, 
+	    resg = {0}, resk = {0}, fsum = {0}, absc1 = {0}, absc2 = {0}, 
+	    fval1 = {0}, fval2 = {0}, hlgth = {0}, centr = {0}, reskh = {0}, 
+	    uflow = {0};
     extern doublereal d1mach_(integer *);
-    doublereal tabsc1 = {}, tabsc2 = {}, epmach = {};
+    doublereal tabsc1 = {0}, tabsc2 = {0}, epmach = {0};
 
 /* ***begin prologue  dqk15i */
 /* ***date written   800101   (yymmdd) */

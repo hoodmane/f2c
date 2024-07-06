@@ -20,12 +20,13 @@
     integer i__1;
 
     /* Local variables */
-    integer j = {}, k = {};
-    doublereal am = {}, an = {};
-    integer jj = {}, jk = {}, nrx = {}, next = {}, ihalf = {};
-    doublereal fpmax = {};
-    logical iserr = {};
-    integer maxpt = {}, jbegin = {}, maxbeg = {}, number = {}, jpoint = {};
+    integer j = {0}, k = {0};
+    doublereal am = {0}, an = {0};
+    integer jj = {0}, jk = {0}, nrx = {0}, next = {0}, ihalf = {0};
+    doublereal fpmax = {0};
+    logical iserr = {0};
+    integer maxpt = {0}, jbegin = {0}, maxbeg = {0}, number = {0}, jpoint = {
+	    0};
 
 /*  subroutine fpknot locates an additional knot for a spline of degree */
 /*  k and adjusts the corresponding parameters,i.e. */

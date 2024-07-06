@@ -26,13 +26,13 @@
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, i1 = {}, i2 = {}, j1 = {}, j2 = {}, k1 = {}, k2 
-	    = {}, m1 = {}, ib = {}, iq = {}, iz = {}, ia1 = {}, ia2 = {}, ig1 
-	    = {}, ig2 = {}, ncc = {}, ifp = {};
-    doublereal per = {}, tol = {};
-    integer nmin = {};
-    doublereal dist = {};
-    integer maxit = {}, lwest = {};
+    integer i__ = {0}, j = {0}, i1 = {0}, i2 = {0}, j1 = {0}, j2 = {0}, k1 = {
+	    0}, k2 = {0}, m1 = {0}, ib = {0}, iq = {0}, iz = {0}, ia1 = {0}, 
+	    ia2 = {0}, ig1 = {0}, ig2 = {0}, ncc = {0}, ifp = {0};
+    doublereal per = {0}, tol = {0};
+    integer nmin = {0};
+    doublereal dist = {0};
+    integer maxit = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchep_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpclos_(integer *,
 	     integer *, integer *, doublereal *, integer *, doublereal *, 

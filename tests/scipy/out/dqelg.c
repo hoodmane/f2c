@@ -26,21 +26,21 @@ static integer c__2 = 2;
     doublereal d__1, d__2, d__3;
 
     /* Local variables */
-    integer i__ = {};
-    doublereal e0 = {}, e1 = {}, e2 = {}, e3 = {};
-    integer k1 = {}, k2 = {}, k3 = {}, ib = {}, ie = {};
-    doublereal ss = {};
-    integer ib2 = {};
-    doublereal res = {};
-    integer num = {};
-    doublereal err1 = {}, err2 = {}, err3 = {}, tol1 = {}, tol2 = {}, tol3 = {
-	    };
-    integer indx = {};
-    doublereal e1abs = {}, oflow = {}, error = {};
+    integer i__ = {0};
+    doublereal e0 = {0}, e1 = {0}, e2 = {0}, e3 = {0};
+    integer k1 = {0}, k2 = {0}, k3 = {0}, ib = {0}, ie = {0};
+    doublereal ss = {0};
+    integer ib2 = {0};
+    doublereal res = {0};
+    integer num = {0};
+    doublereal err1 = {0}, err2 = {0}, err3 = {0}, tol1 = {0}, tol2 = {0}, 
+	    tol3 = {0};
+    integer indx = {0};
+    doublereal e1abs = {0}, oflow = {0}, error = {0};
     extern doublereal d1mach_(integer *);
-    doublereal delta1 = {}, delta2 = {}, delta3 = {}, epmach = {}, epsinf = {}
-	    ;
-    integer newelm = {}, limexp = {};
+    doublereal delta1 = {0}, delta2 = {0}, delta3 = {0}, epmach = {0}, epsinf 
+	    = {0};
+    integer newelm = {0}, limexp = {0};
 
 /* ***begin prologue  dqelg */
 /* ***refer to  dqagie,dqagoe,dqagpe,dqagse */

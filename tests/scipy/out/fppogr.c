@@ -36,27 +36,27 @@ static integer c__1 = 1;
     double atan2(doublereal, doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {};
-    doublereal p = {}, f1 = {}, f2 = {}, f3 = {};
-    integer i1 = {}, i2 = {}, l1 = {}, l2 = {}, l3 = {}, l4 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {}, vb = {}, pi = {}, ve = {};
-    integer nn = {}, ju = {};
-    doublereal rn = {};
-    integer mu0 = {}, mu1 = {};
-    doublereal acc = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal p = {0}, f1 = {0}, f2 = {0}, f3 = {0};
+    integer i1 = {0}, i2 = {0}, l1 = {0}, l2 = {0}, l3 = {0}, l4 = {0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0}, vb = {0}, pi = {0}, ve = {0};
+    integer nn = {0}, ju = {0};
+    doublereal rn = {0};
+    integer mu0 = {0}, mu1 = {0};
+    doublereal acc = {0};
     integer idd[2] = {};
-    doublereal one = {}, per = {};
-    integer nue = {}, nve = {}, mpm = {}, ktu = {};
+    doublereal one = {0}, per = {0};
+    integer nue = {0}, nve = {0}, mpm = {0}, ktu = {0};
     doublereal dzz[3] = {};
-    integer ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer npl1 = {}, ifbu = {}, ifbv = {}, iter = {};
-    doublereal fpms = {};
-    integer ifsu = {}, ifsv = {};
-    doublereal zmin = {};
-    integer nplu = {};
-    doublereal zmax = {};
-    integer nplv = {}, mumin = {}, numax = {}, nvmax = {};
+    integer ich1 = {0}, ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer npl1 = {0}, ifbu = {0}, ifbv = {0}, iter = {0};
+    doublereal fpms = {0};
+    integer ifsu = {0}, ifsv = {0};
+    doublereal zmin = {0};
+    integer nplu = {0};
+    doublereal zmax = {0};
+    integer nplv = {0}, mumin = {0}, numax = {0}, nvmax = {0};
     extern /* Recursive Subroutine */ int fpopdi_(integer *, integer *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 
@@ -69,7 +69,7 @@ static integer c__1 = 1;
     extern /* Recursive Subroutine */ int fpknot_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    integer *, integer *);
-    integer istart = {}, nrintu = {}, nrintv = {};
+    integer istart = {0}, nrintu = {0}, nrintv = {0};
 
 /*  .. */
 /*  ..scalar arguments.. */

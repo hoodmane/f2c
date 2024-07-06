@@ -31,8 +31,8 @@
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, jm1 = {};
-    doublereal tan__ = {}, temp = {}, rowj = {}, cotan = {};
+    integer i__ = {0}, j = {0}, jm1 = {0};
+    doublereal tan__ = {0}, temp = {0}, rowj = {0}, cotan = {0};
 
 /*     ********** */
 

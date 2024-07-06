@@ -29,29 +29,29 @@ static integer c__1 = 1;
     doublereal d__1, d__2;
 
     /* Local variables */
-    integer k = {};
-    doublereal a1 = {}, a2 = {}, b1 = {}, b2 = {}, rg[25] = {}, rh[25] = {}, 
-	    ri[25] = {}, rj[25] = {};
-    integer nev = {};
-    doublereal area = {}, area1 = {}, area2 = {}, area12 = {};
+    integer k = {0};
+    doublereal a1 = {0}, a2 = {0}, b1 = {0}, b2 = {0}, rg[25] = {}, rh[25] = {
+	    }, ri[25] = {}, rj[25] = {};
+    integer nev = {0};
+    doublereal area = {0}, area1 = {0}, area2 = {0}, area12 = {0};
     extern /* Recursive Subroutine */ int dqc25s_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, integer *,
 	     integer *);
-    doublereal erro12 = {};
-    integer nrmax = {};
-    doublereal uflow = {};
+    doublereal erro12 = {0};
+    integer nrmax = {0};
+    doublereal uflow = {0};
     extern doublereal d1mach_(integer *);
-    integer iroff1 = {}, iroff2 = {};
-    doublereal resas1 = {}, resas2 = {}, error1 = {}, error2 = {}, epmach = {}
-	    , errbnd = {}, centre = {};
+    integer iroff1 = {0}, iroff2 = {0};
+    doublereal resas1 = {0}, resas2 = {0}, error1 = {0}, error2 = {0}, epmach 
+	    = {0}, errbnd = {0}, centre = {0};
     extern /* Recursive Subroutine */ int dqmomo_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, integer *)
 	    ;
-    doublereal errmax = {};
-    integer maxerr = {};
-    doublereal errsum = {};
+    doublereal errmax = {0};
+    integer maxerr = {0};
+    doublereal errsum = {0};
     extern /* Recursive Subroutine */ int dqpsrt_(integer *, integer *, 
 	    integer *, doublereal *, doublereal *, integer *, integer *);
 

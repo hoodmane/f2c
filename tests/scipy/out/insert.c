@@ -16,7 +16,7 @@
 	n, doublereal *c__, integer *k, doublereal *x, doublereal *tt, 
 	integer *nn, doublereal *cc, integer *nest, integer *ier)
 {
-    integer l = {}, k1 = {}, kk = {}, nk = {};
+    integer l = {0}, k1 = {0}, kk = {0}, nk = {0};
     extern /* Recursive Subroutine */ int fpinst_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *);

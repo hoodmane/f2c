@@ -21,9 +21,9 @@ doublereal dblint_(doublereal *tx, integer *nx, doublereal *ty, integer *ny,
     doublereal ret_val;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, m = {};
-    doublereal res = {};
-    integer nkx1 = {}, nky1 = {};
+    integer i__ = {0}, j = {0}, l = {0}, m = {0};
+    doublereal res = {0};
+    integer nkx1 = {0}, nky1 = {0};
     extern /* Recursive Subroutine */ int fpintb_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *);
 

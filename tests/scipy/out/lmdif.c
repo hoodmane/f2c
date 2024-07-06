@@ -43,26 +43,26 @@ static logical c_true = TRUE_;
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {};
-    doublereal par = {}, sum = {};
-    integer iter = {};
-    doublereal temp = {}, temp1 = {}, temp2 = {};
-    integer iflag = {};
-    doublereal delta = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal par = {0}, sum = {0};
+    integer iter = {0};
+    doublereal temp = {0}, temp1 = {0}, temp2 = {0};
+    integer iflag = {0};
+    doublereal delta = {0};
     extern /* Recursive Subroutine */ int qrfac_(integer *, integer *, 
 	    doublereal *, integer *, logical *, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *), lmpar_(integer *, 
 	    doublereal *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    doublereal ratio = {};
+    doublereal ratio = {0};
     extern doublereal enorm_(integer *, doublereal *);
-    doublereal fnorm = {}, gnorm = {};
+    doublereal fnorm = {0}, gnorm = {0};
     extern /* Recursive Subroutine */ int fdjac2_(S_fp, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *, integer *, 
 	    doublereal *, doublereal *);
-    doublereal pnorm = {}, xnorm = {}, fnorm1 = {}, actred = {}, dirder = {}, 
-	    epsmch = {}, prered = {};
+    doublereal pnorm = {0}, xnorm = {0}, fnorm1 = {0}, actred = {0}, dirder = 
+	    {0}, epsmch = {0}, prered = {0};
     extern doublereal dpmpar_(integer *);
 
 /*     ********** */

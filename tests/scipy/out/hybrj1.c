@@ -26,14 +26,14 @@
     integer fjac_dim1, fjac_offset, i__1;
 
     /* Local variables */
-    integer j = {}, lr = {}, mode = {}, nfev = {}, njev = {};
-    doublereal xtol = {};
+    integer j = {0}, lr = {0}, mode = {0}, nfev = {0}, njev = {0};
+    doublereal xtol = {0};
     extern /* Recursive Subroutine */ int hybrj_(U_fp, integer *, doublereal *
 	    , doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *);
-    integer maxfev = {}, nprint = {};
+    integer maxfev = {0}, nprint = {0};
 
 /*     ********** */
 

@@ -19,9 +19,9 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, k1 = {}, k2 = {}, jj = {};
-    doublereal tj = {}, tl = {};
-    integer ib1 = {}, ie1 = {}, nk1 = {}, nk2 = {}, nk3 = {};
+    integer i__ = {0}, j = {0}, l = {0}, k1 = {0}, k2 = {0}, jj = {0};
+    doublereal tj = {0}, tl = {0};
+    integer ib1 = {0}, ie1 = {0}, nk1 = {0}, nk2 = {0}, nk3 = {0};
 
 /*  subroutine fpched verifies the number and the position of the knots */
 /*  t(j),j=1,2,...,n of a spline of degree k,with ib derative constraints */

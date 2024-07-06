@@ -22,10 +22,11 @@
 
     /* Local variables */
     doublereal h__[7] = {};
-    integer i__ = {}, j = {}, l = {}, i2 = {}, i3 = {}, m2 = {}, m3 = {}, n1 =
-	     {}, n4 = {}, ii = {}, jj = {}, it = {}, mid = {}, nmd = {};
-    doublereal one = {}, cos__ = {}, sin__ = {}, piv = {}, pinv = {};
-    integer irot = {}, iband = {}, nrold = {}, number = {};
+    integer i__ = {0}, j = {0}, l = {0}, i2 = {0}, i3 = {0}, m2 = {0}, m3 = {
+	    0}, n1 = {0}, n4 = {0}, ii = {0}, jj = {0}, it = {0}, mid = {0}, 
+	    nmd = {0};
+    doublereal one = {0}, cos__ = {0}, sin__ = {0}, piv = {0}, pinv = {0};
+    integer irot = {0}, iband = {0}, nrold = {0}, number = {0};
     extern /* Recursive Subroutine */ int fprota_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *), fpgivs_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *);

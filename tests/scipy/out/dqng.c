@@ -159,15 +159,15 @@ static integer c__0 = 0;
     double pow_dd(doublereal *, doublereal *);
 
     /* Local variables */
-    integer k = {}, l = {};
+    integer k = {0}, l = {0};
     doublereal fv1[5] = {}, fv2[5] = {}, fv3[5] = {}, fv4[5] = {};
-    integer ipx = {};
-    doublereal absc = {}, fval = {}, res10 = {}, res21 = {}, res43 = {}, 
-	    res87 = {}, fval1 = {}, fval2 = {}, hlgth = {}, centr = {}, reskh 
-	    = {}, uflow = {};
+    integer ipx = {0};
+    doublereal absc = {0}, fval = {0}, res10 = {0}, res21 = {0}, res43 = {0}, 
+	    res87 = {0}, fval1 = {0}, fval2 = {0}, hlgth = {0}, centr = {0}, 
+	    reskh = {0}, uflow = {0};
     extern doublereal d1mach_(integer *);
-    doublereal epmach = {}, dhlgth = {}, resabs = {}, resasc = {}, fcentr = {}
-	    , savfun[21] = {};
+    doublereal epmach = {0}, dhlgth = {0}, resabs = {0}, resasc = {0}, fcentr 
+	    = {0}, savfun[21] = {};
     extern /* Recursive Subroutine */ int xerror_(char *, integer *, integer *
 	    , integer *, ftnlen);
 

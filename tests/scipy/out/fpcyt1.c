@@ -18,10 +18,11 @@
     integer a_dim1, a_offset, i__1;
 
     /* Local variables */
-    integer i__ = {};
-    doublereal v = {};
-    integer n1 = {}, n2 = {};
-    doublereal aa = {}, one = {}, sum = {}, beta = {}, teta = {}, gamma = {};
+    integer i__ = {0};
+    doublereal v = {0};
+    integer n1 = {0}, n2 = {0};
+    doublereal aa = {0}, one = {0}, sum = {0}, beta = {0}, teta = {0}, gamma =
+	     {0};
 
 /* (l u)-decomposition of a cyclic tridiagonal matrix with the non-zero */
 /* elements stored as follows */

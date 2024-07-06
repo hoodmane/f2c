@@ -15,9 +15,9 @@
 /* Recursive Subroutine */ int dqcheb_(doublereal *x, doublereal *fval, 
 	doublereal *cheb12, doublereal *cheb24)
 {
-    integer i__ = {}, j = {};
-    doublereal v[12] = {}, alam = {}, alam1 = {}, alam2 = {}, part1 = {}, 
-	    part2 = {}, part3 = {};
+    integer i__ = {0}, j = {0};
+    doublereal v[12] = {}, alam = {0}, alam1 = {0}, alam2 = {0}, part1 = {0}, 
+	    part2 = {0}, part3 = {0};
 
 /* ***begin prologue  dqcheb */
 /* ***refer to  dqc25c,dqc25f,dqc25s */

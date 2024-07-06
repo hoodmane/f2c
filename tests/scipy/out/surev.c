@@ -22,7 +22,7 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, muv = {};
+    integer i__ = {0}, muv = {0};
     extern /* Recursive Subroutine */ int fpsuev_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 

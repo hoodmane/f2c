@@ -35,39 +35,42 @@
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, n = {};
-    doublereal p = {}, f1 = {}, f2 = {}, f3 = {};
-    integer i1 = {}, i2 = {}, i3 = {}, j1 = {}, l1 = {}, l2 = {}, n1 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {}, x0 = {}, x1 = {}, y0 = {}, y1 = {};
-    integer la = {}, ii = {}, lf = {}, lh = {}, in = {};
-    doublereal wi = {}, rn = {}, hx[6] = {}, zi = {}, sq = {};
-    integer kx = {}, ky = {}, lx = {}, ly = {}, nx = {}, ny = {};
+    integer i__ = {0}, j = {0}, l = {0}, n = {0};
+    doublereal p = {0}, f1 = {0}, f2 = {0}, f3 = {0};
+    integer i1 = {0}, i2 = {0}, i3 = {0}, j1 = {0}, l1 = {0}, l2 = {0}, n1 = {
+	    0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0}, x0 = {0}, x1 = {0}, y0 = {0}, y1 
+	    = {0};
+    integer la = {0}, ii = {0}, lf = {0}, lh = {0}, in = {0};
+    doublereal wi = {0}, rn = {0}, hx[6] = {}, zi = {0}, sq = {0};
+    integer kx = {0}, ky = {0}, lx = {0}, ly = {0}, nx = {0}, ny = {0};
     doublereal hy[6] = {};
-    integer kx1 = {}, kx2 = {}, ky1 = {}, ky2 = {};
-    doublereal acc = {};
-    integer ibb = {};
-    doublereal arg = {}, one = {}, cos__ = {}, ten = {}, eps = {}, hxi = {}, 
-	    sin__ = {};
-    integer nxe = {}, nye = {};
-    doublereal piv = {};
-    integer num = {};
-    doublereal fac1 = {}, fac2 = {};
-    integer jxy = {}, nxx = {}, nyy = {}, ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer num1 = {}, nk1x = {}, nk1y = {};
-    doublereal half = {};
-    integer ncof = {};
-    doublereal dmax__ = {};
-    integer nreg = {}, rank = {}, iter = {};
-    doublereal fpms = {}, pinv = {};
-    integer irot = {}, jrot = {}, iband = {};
-    doublereal sigma = {}, fpmax = {};
-    integer nminx = {}, nminy = {};
-    doublereal store = {};
-    integer nrint = {}, iband1 = {}, lwest = {}, iband3 = {}, iband4 = {};
+    integer kx1 = {0}, kx2 = {0}, ky1 = {0}, ky2 = {0};
+    doublereal acc = {0};
+    integer ibb = {0};
+    doublereal arg = {0}, one = {0}, cos__ = {0}, ten = {0}, eps = {0}, hxi = 
+	    {0}, sin__ = {0};
+    integer nxe = {0}, nye = {0};
+    doublereal piv = {0};
+    integer num = {0};
+    doublereal fac1 = {0}, fac2 = {0};
+    integer jxy = {0}, nxx = {0}, nyy = {0}, ich1 = {0}, ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer num1 = {0}, nk1x = {0}, nk1y = {0};
+    doublereal half = {0};
+    integer ncof = {0};
+    doublereal dmax__ = {0};
+    integer nreg = {0}, rank = {0}, iter = {0};
+    doublereal fpms = {0}, pinv = {0};
+    integer irot = {0}, jrot = {0}, iband = {0};
+    doublereal sigma = {0}, fpmax = {0};
+    integer nminx = {0}, nminy = {0};
+    doublereal store = {0};
+    integer nrint = {0}, iband1 = {0}, lwest = {0}, iband3 = {0}, iband4 = {0}
+	    ;
     extern /* Recursive Subroutine */ int fpback_(doublereal *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *);
-    integer ichang = {};
+    integer ichang = {0};
     extern /* Recursive Subroutine */ int fpdisc_(doublereal *, integer *, 
 	    integer *, doublereal *, integer *), fporde_(doublereal *, 
 	    doublereal *, integer *, integer *, integer *, doublereal *, 

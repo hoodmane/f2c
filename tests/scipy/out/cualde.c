@@ -21,7 +21,7 @@
 
     /* Local variables */
     doublereal h__[6] = {};
-    integer i__ = {}, j = {}, l = {}, m = {}, kk = {}, nk1 = {};
+    integer i__ = {0}, j = {0}, l = {0}, m = {0}, kk = {0}, nk1 = {0};
     extern /* Recursive Subroutine */ int fpader_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *);
 

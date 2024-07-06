@@ -19,14 +19,14 @@
     integer i__1, i__2;
 
     /* Local variables */
-    doublereal a = {}, b = {}, f = {}, h__[6] = {};
-    integer i__ = {}, j = {}, k = {}, l = {};
+    doublereal a = {0}, b = {0}, f = {0}, h__[6] = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0};
     doublereal h1[6] = {};
-    integer j1 = {}, k1 = {}, l0 = {}, ia = {}, ib = {};
-    doublereal ak = {};
-    integer li = {}, lj = {}, lk = {}, it = {};
-    doublereal arg = {}, one = {};
-    integer min__ = {};
+    integer j1 = {0}, k1 = {0}, l0 = {0}, ia = {0}, ib = {0};
+    doublereal ak = {0};
+    integer li = {0}, lj = {0}, lk = {0}, it = {0};
+    doublereal arg = {0}, one = {0};
+    integer min__ = {0};
     doublereal aint[6] = {};
 
 /*  subroutine fpintb calculates integrals of the normalized b-splines */

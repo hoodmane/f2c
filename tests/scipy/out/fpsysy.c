@@ -19,8 +19,8 @@
     integer i__1, i__2, i__3;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, i1 = {};
-    doublereal fac = {};
+    integer i__ = {0}, j = {0}, k = {0}, i1 = {0};
+    doublereal fac = {0};
 
 /* subroutine fpsysy solves a linear n x n symmetric system */
 /*    (a) * (b) = (g) */

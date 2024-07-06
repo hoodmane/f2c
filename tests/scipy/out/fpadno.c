@@ -16,9 +16,9 @@
 	left, integer *right, integer *info, integer *count, integer *merk, 
 	integer *jbind, integer *n1, integer *ier)
 {
-    integer k = {};
-    logical bool = {};
-    integer point = {}, niveau = {};
+    integer k = {0};
+    logical bool = {0};
+    integer point = {0}, niveau = {0};
     extern /* Recursive Subroutine */ int fpfrno_(integer *, integer *, 
 	    integer *, integer *, integer *, integer *, integer *, integer *, 
 	    integer *, integer *);

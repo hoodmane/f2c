@@ -35,17 +35,17 @@ static integer c__2 = 2;
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {};
-    doublereal fp = {};
-    integer jm1 = {}, jp1 = {};
-    doublereal sum = {}, parc = {}, parl = {};
-    integer iter = {};
-    doublereal temp = {}, paru = {}, dwarf = {};
-    integer nsing = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0};
+    doublereal fp = {0};
+    integer jm1 = {0}, jp1 = {0};
+    doublereal sum = {0}, parc = {0}, parl = {0};
+    integer iter = {0};
+    doublereal temp = {0}, paru = {0}, dwarf = {0};
+    integer nsing = {0};
     extern doublereal enorm_(integer *, doublereal *);
-    doublereal gnorm = {};
+    doublereal gnorm = {0};
     extern doublereal dpmpar_(integer *);
-    doublereal dxnorm = {};
+    doublereal dxnorm = {0};
     extern /* Recursive Subroutine */ int qrsolv_(integer *, doublereal *, 
 	    integer *, integer *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *);

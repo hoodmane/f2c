@@ -24,11 +24,11 @@ static doublereal c_b2 = 2.;
     double pow_dd(doublereal *, doublereal *);
 
     /* Local variables */
-    integer i__ = {};
-    doublereal an = {};
-    integer im1 = {};
-    doublereal anm1 = {}, ralf = {}, rbet = {}, alfp1 = {}, alfp2 = {}, betp1 
-	    = {}, betp2 = {};
+    integer i__ = {0};
+    doublereal an = {0};
+    integer im1 = {0};
+    doublereal anm1 = {0}, ralf = {0}, rbet = {0}, alfp1 = {0}, alfp2 = {0}, 
+	    betp1 = {0}, betp2 = {0};
 
 /* ***begin prologue  dqmomo */
 /* ***date written   820101   (yymmdd) */

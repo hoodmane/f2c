@@ -16,7 +16,7 @@
 	left, integer *right, integer *info, integer *point, integer *merk, 
 	integer *n1, integer *count, integer *ier)
 {
-    integer i__ = {}, j = {}, k = {}, l = {}, n = {}, niveau = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, n = {0}, niveau = {0};
 
 /*  subroutine fpfrno collects the free nodes (up field zero) of the */
 /*  triply linked tree the information of which is kept in the arrays */

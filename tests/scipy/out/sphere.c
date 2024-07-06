@@ -26,17 +26,17 @@
     double atan(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, la = {}, lf = {}, ki = {}, lh = {};
-    doublereal pi = {};
-    integer kn = {}, lq = {}, ib1 = {}, ib3 = {};
-    doublereal pi2 = {};
-    integer np4 = {}, nt4 = {}, lcc = {}, ncc = {}, lff = {}, lbp = {}, lco = 
-	    {};
-    doublereal one = {};
-    integer lbt = {}, lcs = {}, lfp = {}, lro = {}, npp = {};
-    doublereal tol = {};
-    integer lsp = {}, lst = {}, ntt = {}, ncof = {}, nreg = {}, ncest = {}, 
-	    maxit = {}, nrint = {}, kwest = {}, lwest = {};
+    integer i__ = {0}, j = {0}, la = {0}, lf = {0}, ki = {0}, lh = {0};
+    doublereal pi = {0};
+    integer kn = {0}, lq = {0}, ib1 = {0}, ib3 = {0};
+    doublereal pi2 = {0};
+    integer np4 = {0}, nt4 = {0}, lcc = {0}, ncc = {0}, lff = {0}, lbp = {0}, 
+	    lco = {0};
+    doublereal one = {0};
+    integer lbt = {0}, lcs = {0}, lfp = {0}, lro = {0}, npp = {0};
+    doublereal tol = {0};
+    integer lsp = {0}, lst = {0}, ntt = {0}, ncof = {0}, nreg = {0}, ncest = {
+	    0}, maxit = {0}, nrint = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpsphe_(integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, integer *, integer *, doublereal *, doublereal *, 

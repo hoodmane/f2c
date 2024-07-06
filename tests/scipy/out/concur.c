@@ -24,14 +24,15 @@
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k1 = {}, k2 = {}, ja = {}, jb = {}, jg = {}, kk 
-	    = {}, jq = {}, jz = {}, ib1 = {}, ie1 = {}, ncc = {}, jfp = {};
-    doublereal tol = {};
-    integer mxx = {}, mmin = {}, nmin = {}, nmax = {}, maxit = {};
+    integer i__ = {0}, j = {0}, k1 = {0}, k2 = {0}, ja = {0}, jb = {0}, jg = {
+	    0}, kk = {0}, jq = {0}, jz = {0}, ib1 = {0}, ie1 = {0}, ncc = {0},
+	     jfp = {0};
+    doublereal tol = {0};
+    integer mxx = {0}, mmin = {0}, nmin = {0}, nmax = {0}, maxit = {0};
     extern /* Recursive Subroutine */ int curev_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, integer *);
-    integer lwest = {};
+    integer lwest = {0};
     extern /* Recursive Subroutine */ int fpched_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *, integer *, integer 
 	    *), fpadpo_(integer *, doublereal *, integer *, doublereal *, 

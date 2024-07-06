@@ -22,7 +22,7 @@ static integer c__26 = 26;
 	integer *neval, integer *ier, integer *limit, integer *lenw, integer *
 	last, integer *iwork, doublereal *work)
 {
-    integer l1 = {}, l2 = {}, l3 = {}, lvl = {};
+    integer l1 = {0}, l2 = {0}, l3 = {0}, lvl = {0};
     extern /* Recursive Subroutine */ int dqawse_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *, doublereal *,
 	     doublereal *, integer *, doublereal *, doublereal *, integer *, 

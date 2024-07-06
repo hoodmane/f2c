@@ -20,9 +20,9 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, m = {}, i1 = {}, k1 = {}, mk = {}, nk = {}, nl =
-	     {}, ll = {}, nk1 = {};
-    doublereal fac = {}, one = {}, per = {};
+    integer i__ = {0}, j = {0}, m = {0}, i1 = {0}, k1 = {0}, mk = {0}, nk = {
+	    0}, nl = {0}, ll = {0}, nk1 = {0};
+    doublereal fac = {0}, one = {0}, per = {0};
 
 /*  given the b-spline representation (knots t(j),j=1,2,...,n, b-spline */
 /*  coefficients c(j),j=1,2,...,n-k-1) of a spline of degree k, fpinst */

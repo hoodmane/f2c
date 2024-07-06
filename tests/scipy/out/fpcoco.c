@@ -24,16 +24,17 @@
     doublereal d__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {}, i1 = {}, l1 = {}, m1 = {}, n4 = 
-	    {}, n6 = {}, n8 = {}, ia = {}, ib = {}, ic = {}, mb = {}, ji = {},
-	     jl = {}, iq = {}, nm = {}, jr = {}, iu = {}, ju = {}, nr = {};
-    doublereal tj = {}, xi = {};
-    integer iz = {}, jib = {}, jjb = {};
-    doublereal sql = {};
-    integer izz = {};
-    doublereal half = {};
-    integer nmax = {};
-    doublereal term = {}, sqmax = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, i1 = {0}, l1 = {0}, m1 = {0}
+	    , n4 = {0}, n6 = {0}, n8 = {0}, ia = {0}, ib = {0}, ic = {0}, mb =
+	     {0}, ji = {0}, jl = {0}, iq = {0}, nm = {0}, jr = {0}, iu = {0}, 
+	    ju = {0}, nr = {0};
+    doublereal tj = {0}, xi = {0};
+    integer iz = {0}, jib = {0}, jjb = {0};
+    doublereal sql = {0};
+    integer izz = {0};
+    doublereal half = {0};
+    integer nmax = {0};
+    doublereal term = {0}, sqmax = {0};
     extern /* Recursive Subroutine */ int fpcosp_(integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *,
 	     integer *, integer *, doublereal *, doublereal *, doublereal *, 

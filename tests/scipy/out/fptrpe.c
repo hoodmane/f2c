@@ -23,20 +23,20 @@
 
     /* Local variables */
     doublereal h__[5] = {};
-    integer i__ = {}, j = {}, l = {};
+    integer i__ = {0}, j = {0}, l = {0};
     doublereal h1[5] = {};
-    integer i1 = {}, i2 = {}, i3 = {}, j1 = {}, m1 = {}, m2 = {}, m3 = {}, n1 
-	    = {}, n4 = {}, l0 = {}, l1 = {}, n7 = {};
+    integer i1 = {0}, i2 = {0}, i3 = {0}, j1 = {0}, m1 = {0}, m2 = {0}, m3 = {
+	    0}, n1 = {0}, n4 = {0}, l0 = {0}, l1 = {0}, n7 = {0};
     doublereal h2[4] = {};
-    integer n11 = {};
-    doublereal co = {};
-    integer ii = {}, jj = {}, ij = {}, jk = {}, ik = {};
-    doublereal si = {};
-    integer it = {}, mid = {}, nmd = {};
-    doublereal one = {}, piv = {};
-    integer jper = {};
-    doublereal pinv = {};
-    integer irot = {}, nrold = {}, number = {};
+    integer n11 = {0};
+    doublereal co = {0};
+    integer ii = {0}, jj = {0}, ij = {0}, jk = {0}, ik = {0};
+    doublereal si = {0};
+    integer it = {0}, mid = {0}, nmd = {0};
+    doublereal one = {0}, piv = {0};
+    integer jper = {0};
+    doublereal pinv = {0};
+    integer irot = {0}, nrold = {0}, number = {0};
     extern /* Recursive Subroutine */ int fprota_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *), fpgivs_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *);

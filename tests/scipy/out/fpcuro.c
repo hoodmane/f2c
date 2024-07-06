@@ -25,12 +25,12 @@
 	    doublereal *, doublereal *);
 
     /* Local variables */
-    doublereal f = {};
-    integer i__ = {};
-    doublereal q = {}, r__ = {}, u = {}, y = {}, a1 = {}, b1 = {}, c1 = {}, 
-	    d1 = {}, e3 = {}, p3 = {}, u1 = {}, u2 = {}, df = {}, pi3 = {}, 
-	    two = {}, half = {}, disc = {}, ovfl = {}, tent = {}, four = {}, 
-	    step = {}, three = {};
+    doublereal f = {0};
+    integer i__ = {0};
+    doublereal q = {0}, r__ = {0}, u = {0}, y = {0}, a1 = {0}, b1 = {0}, c1 = 
+	    {0}, d1 = {0}, e3 = {0}, p3 = {0}, u1 = {0}, u2 = {0}, df = {0}, 
+	    pi3 = {0}, two = {0}, half = {0}, disc = {0}, ovfl = {0}, tent = {
+	    0}, four = {0}, step = {0}, three = {0};
 
 /*  subroutine fpcuro finds the real zeros of a cubic polynomial */
 /*  p(x) = a*x**3+b*x**2+c*x+d. */

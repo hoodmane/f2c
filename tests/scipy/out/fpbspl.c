@@ -19,11 +19,11 @@
     integer i__1, i__2;
 
     /* Local variables */
-    doublereal f = {};
-    integer i__ = {}, j = {};
+    doublereal f = {0};
+    integer i__ = {0}, j = {0};
     doublereal hh[19] = {};
-    integer li = {}, lj = {};
-    doublereal one = {};
+    integer li = {0}, lj = {0};
+    doublereal one = {0};
 
 /*  subroutine fpbspl evaluates the (k+1) non-zero b-splines of */
 /*  degree k at t(l) <= x < t(l+1) using the stable recurrence */

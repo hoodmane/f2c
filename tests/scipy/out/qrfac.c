@@ -34,15 +34,15 @@ static integer c__1 = 1;
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, jp1 = {};
-    doublereal sum = {};
-    integer kmax = {};
-    doublereal temp = {};
-    integer minmn = {};
+    integer i__ = {0}, j = {0}, k = {0}, jp1 = {0};
+    doublereal sum = {0};
+    integer kmax = {0};
+    doublereal temp = {0};
+    integer minmn = {0};
     extern doublereal enorm_(integer *, doublereal *);
-    doublereal epsmch = {};
+    doublereal epsmch = {0};
     extern doublereal dpmpar_(integer *);
-    doublereal ajnorm = {};
+    doublereal ajnorm = {0};
 
 /*     ********** */
 

@@ -31,25 +31,25 @@ static integer c__1 = 1;
 
     /* Local variables */
     doublereal h__[7] = {};
-    integer i__ = {}, j = {}, l = {};
-    doublereal p = {}, f1 = {}, f2 = {}, f3 = {};
-    integer i1 = {}, i2 = {}, i3 = {}, k3 = {}, l0 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {};
-    integer n8 = {}, it = {};
-    doublereal rn = {}, wi = {}, xi = {}, yi = {}, fp0 = {};
-    integer mk1 = {}, nk1 = {};
-    doublereal acc = {}, one = {}, cos__ = {}, sin__ = {};
-    integer new__ = {};
-    doublereal piv = {};
-    integer ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer npl1 = {};
-    doublereal half = {};
-    integer nmin = {}, iter = {}, nmax = {};
-    doublereal fpms = {}, term = {}, pinv = {}, fpold = {}, fpart = {};
-    integer nrint = {};
-    doublereal store = {};
-    integer nplus = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal p = {0}, f1 = {0}, f2 = {0}, f3 = {0};
+    integer i1 = {0}, i2 = {0}, i3 = {0}, k3 = {0}, l0 = {0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0};
+    integer n8 = {0}, it = {0};
+    doublereal rn = {0}, wi = {0}, xi = {0}, yi = {0}, fp0 = {0};
+    integer mk1 = {0}, nk1 = {0};
+    doublereal acc = {0}, one = {0}, cos__ = {0}, sin__ = {0};
+    integer new__ = {0};
+    doublereal piv = {0};
+    integer ich1 = {0}, ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer npl1 = {0};
+    doublereal half = {0};
+    integer nmin = {0}, iter = {0}, nmax = {0};
+    doublereal fpms = {0}, term = {0}, pinv = {0}, fpold = {0}, fpart = {0};
+    integer nrint = {0};
+    doublereal store = {0};
+    integer nplus = {0};
     extern /* Recursive Subroutine */ int fpback_(doublereal *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *), fpdisc_(
 	    doublereal *, integer *, integer *, doublereal *, integer *);

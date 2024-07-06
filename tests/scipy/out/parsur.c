@@ -27,13 +27,13 @@ static integer c__3 = 3;
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l1 = {}, l2 = {}, l3 = {}, l4 = {}, nc = {}, mf 
-	    = {};
-    doublereal ub = {}, vb = {}, ue = {}, ve = {}, tol = {};
-    integer lww = {}, kndu = {}, kndv = {}, lfpu = {}, lfpv = {};
-    doublereal peru = {}, perv = {};
-    integer jwrk = {}, knru = {}, knrv = {}, maxit = {}, mumin = {}, mvmin = {
-	    }, kwest = {}, lwest = {};
+    integer i__ = {0}, j = {0}, l1 = {0}, l2 = {0}, l3 = {0}, l4 = {0}, nc = {
+	    0}, mf = {0};
+    doublereal ub = {0}, vb = {0}, ue = {0}, ve = {0}, tol = {0};
+    integer lww = {0}, kndu = {0}, kndv = {0}, lfpu = {0}, lfpv = {0};
+    doublereal peru = {0}, perv = {0};
+    integer jwrk = {0}, knru = {0}, knrv = {0}, maxit = {0}, mumin = {0}, 
+	    mvmin = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchec_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpchep_(
 	    doublereal *, integer *, doublereal *, integer *, integer *, 

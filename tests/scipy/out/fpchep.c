@@ -19,11 +19,11 @@
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, i1 = {}, i2 = {}, j1 = {}, k1 = {}, k2 =
-	     {}, l1 = {}, l2 = {}, m1 = {}, mm = {};
-    doublereal tj = {}, tl = {}, xi = {};
-    integer nk1 = {}, nk2 = {};
-    doublereal per = {};
+    integer i__ = {0}, j = {0}, l = {0}, i1 = {0}, i2 = {0}, j1 = {0}, k1 = {
+	    0}, k2 = {0}, l1 = {0}, l2 = {0}, m1 = {0}, mm = {0};
+    doublereal tj = {0}, tl = {0}, xi = {0};
+    integer nk1 = {0}, nk2 = {0};
+    doublereal per = {0};
 
 /*  subroutine fpchep verifies the number and the position of the knots */
 /*  t(j),j=1,2,...,n of a periodic spline of degree k, in relation to */

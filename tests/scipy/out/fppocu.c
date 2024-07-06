@@ -20,10 +20,10 @@
     integer i__1, i__2, i__3;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, k1 = {}, k2 = {};
-    doublereal ab = {};
-    integer id = {}, jj = {}, ll = {};
-    doublereal aki = {}, work[36] = {};
+    integer i__ = {0}, j = {0}, l = {0}, k1 = {0}, k2 = {0};
+    doublereal ab = {0};
+    integer id = {0}, jj = {0}, ll = {0};
+    doublereal aki = {0}, work[36] = {};
 
 /*  subroutine fppocu finds a idim-dimensional polynomial curve p(u) = */
 /*  (p1(u),p2(u),...,pidim(u)) of degree k, satisfying certain derivative */

@@ -15,7 +15,7 @@
 /* Recursive Subroutine */ int fprota_(doublereal *cos__, doublereal *sin__, 
 	doublereal *a, doublereal *b)
 {
-    doublereal stor1 = {}, stor2 = {};
+    doublereal stor1 = {0}, stor2 = {0};
 
 /*  subroutine fprota applies a givens rotation to a and b. */
 /*  .. */

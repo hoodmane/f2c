@@ -19,8 +19,8 @@
     integer a_dim1, a_offset, i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, j1 = {}, n1 = {};
-    doublereal cc = {}, sum = {};
+    integer i__ = {0}, j = {0}, j1 = {0}, n1 = {0};
+    doublereal cc = {0}, sum = {0};
 
 /* subroutine fpcyt2 solves a linear n x n system */
 /*         a * c = b */

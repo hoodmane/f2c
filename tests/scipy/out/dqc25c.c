@@ -36,19 +36,19 @@
     double log(doublereal);
 
     /* Local variables */
-    integer i__ = {}, k = {};
-    doublereal u = {}, p2 = {}, p3 = {}, p4 = {}, cc = {};
-    integer kp = {};
-    doublereal ak22 = {}, fval[25] = {}, res12 = {}, res24 = {};
-    integer isym = {};
-    doublereal amom0 = {}, amom1 = {}, amom2 = {}, cheb12[13] = {}, cheb24[25]
-	     = {}, hlgth = {}, centr = {};
+    integer i__ = {0}, k = {0};
+    doublereal u = {0}, p2 = {0}, p3 = {0}, p4 = {0}, cc = {0};
+    integer kp = {0};
+    doublereal ak22 = {0}, fval[25] = {}, res12 = {0}, res24 = {0};
+    integer isym = {0};
+    doublereal amom0 = {0}, amom1 = {0}, amom2 = {0}, cheb12[13] = {}, cheb24[
+	    25] = {}, hlgth = {0}, centr = {0};
     extern /* Recursive Subroutine */ int dqk15w_(D_fp, D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *, doublereal *,
 	     doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *), dqcheb_(doublereal *, doublereal *, doublereal *, 
 	    doublereal *);
-    doublereal resabs = {}, resasc = {};
+    doublereal resabs = {0}, resasc = {0};
     extern doublereal dqwgtc_();
 
 /* ***begin prologue  dqc25c */

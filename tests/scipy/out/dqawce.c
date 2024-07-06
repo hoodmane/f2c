@@ -28,22 +28,22 @@ static integer c__1 = 1;
     doublereal d__1, d__2;
 
     /* Local variables */
-    integer k = {};
-    doublereal a1 = {}, a2 = {}, b1 = {}, b2 = {}, aa = {}, bb = {};
-    integer nev = {};
-    doublereal area = {}, area1 = {}, area2 = {}, area12 = {};
+    integer k = {0};
+    doublereal a1 = {0}, a2 = {0}, b1 = {0}, b2 = {0}, aa = {0}, bb = {0};
+    integer nev = {0};
+    doublereal area = {0}, area1 = {0}, area2 = {0}, area12 = {0};
     extern /* Recursive Subroutine */ int dqc25c_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, integer *,
 	     integer *);
-    doublereal erro12 = {};
-    integer krule = {}, nrmax = {};
-    doublereal uflow = {};
+    doublereal erro12 = {0};
+    integer krule = {0}, nrmax = {0};
+    doublereal uflow = {0};
     extern doublereal d1mach_(integer *);
-    integer iroff1 = {}, iroff2 = {};
-    doublereal error1 = {}, error2 = {}, epmach = {}, errbnd = {}, errmax = {}
-	    ;
-    integer maxerr = {};
-    doublereal errsum = {};
+    integer iroff1 = {0}, iroff2 = {0};
+    doublereal error1 = {0}, error2 = {0}, epmach = {0}, errbnd = {0}, errmax 
+	    = {0};
+    integer maxerr = {0};
+    doublereal errsum = {0};
     extern /* Recursive Subroutine */ int dqpsrt_(integer *, integer *, 
 	    integer *, doublereal *, doublereal *, integer *, integer *);
 

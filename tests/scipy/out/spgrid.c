@@ -30,19 +30,20 @@ static integer c__3 = 3;
     double atan2(doublereal, doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, m = {}, i1 = {}, i2 = {}, j1 = {}, j2 = 
-	    {}, nc = {};
-    doublereal rb = {}, re = {}, pi = {}, ve = {}, rn = {}, uu = {}, one = {};
-    integer ldr = {};
-    doublereal per = {}, tol = {};
-    integer muu = {}, lww = {};
-    doublereal half = {};
-    integer kndu = {}, kndv = {};
-    doublereal rmin = {};
-    integer lfpu = {};
-    doublereal rmax = {};
-    integer lfpv = {}, jwrk = {}, knru = {}, knrv = {}, maxit = {}, mumin = {}
-	    , kwest = {}, lwest = {};
+    integer i__ = {0}, j = {0}, l = {0}, m = {0}, i1 = {0}, i2 = {0}, j1 = {0}
+	    , j2 = {0}, nc = {0};
+    doublereal rb = {0}, re = {0}, pi = {0}, ve = {0}, rn = {0}, uu = {0}, 
+	    one = {0};
+    integer ldr = {0};
+    doublereal per = {0}, tol = {0};
+    integer muu = {0}, lww = {0};
+    doublereal half = {0};
+    integer kndu = {0}, kndv = {0};
+    doublereal rmin = {0};
+    integer lfpu = {0};
+    doublereal rmax = {0};
+    integer lfpv = {0}, jwrk = {0}, knru = {0}, knrv = {0}, maxit = {0}, 
+	    mumin = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchec_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpchep_(
 	    doublereal *, integer *, doublereal *, integer *, integer *, 

@@ -24,12 +24,12 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, nc = {}, mz = {}, kx1 = {}, kx2 = {}, ky1 = {}, 
-	    ky2 = {};
-    doublereal tol = {};
-    integer lww = {}, kndx = {}, kndy = {}, lfpx = {}, lfpy = {}, jwrk = {}, 
-	    knrx = {}, knry = {}, maxit = {}, nminx = {}, nminy = {}, kwest = 
-	    {}, lwest = {};
+    integer i__ = {0}, j = {0}, nc = {0}, mz = {0}, kx1 = {0}, kx2 = {0}, ky1 
+	    = {0}, ky2 = {0};
+    doublereal tol = {0};
+    integer lww = {0}, kndx = {0}, kndy = {0}, lfpx = {0}, lfpy = {0}, jwrk = 
+	    {0}, knrx = {0}, knry = {0}, maxit = {0}, nminx = {0}, nminy = {0}
+	    , kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchec_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpregr_(integer *,
 	     doublereal *, integer *, doublereal *, integer *, doublereal *, 

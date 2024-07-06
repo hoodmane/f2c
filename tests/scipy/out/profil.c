@@ -21,10 +21,10 @@
 
     /* Local variables */
     doublereal h__[6] = {};
-    integer i__ = {}, j = {}, l = {}, m = {}, l1 = {}, m0 = {}, kx1 = {}, ky1 
-	    = {};
-    doublereal sum = {};
-    integer nkx1 = {}, nky1 = {};
+    integer i__ = {0}, j = {0}, l = {0}, m = {0}, l1 = {0}, m0 = {0}, kx1 = {
+	    0}, ky1 = {0};
+    doublereal sum = {0};
+    integer nkx1 = {0}, nky1 = {0};
     extern /* Recursive Subroutine */ int fpbspl_(doublereal *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *);
 

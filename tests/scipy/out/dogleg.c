@@ -33,12 +33,12 @@ static integer c__1 = 1;
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {}, jj = {}, jp1 = {};
-    doublereal sum = {}, temp = {}, alpha = {}, bnorm = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, jj = {0}, jp1 = {0};
+    doublereal sum = {0}, temp = {0}, alpha = {0}, bnorm = {0};
     extern doublereal enorm_(integer *, doublereal *);
-    doublereal gnorm = {}, qnorm = {}, epsmch = {};
+    doublereal gnorm = {0}, qnorm = {0}, epsmch = {0};
     extern doublereal dpmpar_(integer *);
-    doublereal sgnorm = {};
+    doublereal sgnorm = {0};
 
 /*     ********** */
 

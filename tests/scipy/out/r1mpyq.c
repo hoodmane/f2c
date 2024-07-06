@@ -27,8 +27,8 @@
     double sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, nm1 = {}, nmj = {};
-    doublereal cos__ = {}, sin__ = {}, temp = {};
+    integer i__ = {0}, j = {0}, nm1 = {0}, nmj = {0};
+    doublereal cos__ = {0}, sin__ = {0}, temp = {0};
 
 /*     ********** */
 

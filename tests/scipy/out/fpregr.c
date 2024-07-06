@@ -32,23 +32,24 @@ static integer c__1 = 1;
     integer i__1, i__2, i__3, i__4, i__5;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {};
-    doublereal p = {}, f1 = {}, f2 = {}, f3 = {};
-    integer k3 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {};
-    integer mm = {}, lq = {};
-    doublereal rn = {};
-    integer mk1 = {}, kx1 = {}, kx2 = {}, ky1 = {}, ky2 = {};
-    doublereal acc = {}, one = {};
-    integer lax = {}, lay = {}, lbx = {}, lby = {}, lri = {}, mpm = {}, nxe = 
-	    {}, nye = {}, nxk = {}, lsx = {}, lsy = {}, ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer npl1 = {}, nk1x = {}, nk1y = {};
-    doublereal half = {};
-    integer ncof = {}, ifbx = {}, ifby = {}, iter = {};
-    doublereal fpms = {};
-    integer ifsx = {}, ifsy = {}, nplx = {}, nply = {}, mynx = {}, nminx = {},
-	     nminy = {}, nmaxx = {}, nmaxy = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal p = {0}, f1 = {0}, f2 = {0}, f3 = {0};
+    integer k3 = {0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0};
+    integer mm = {0}, lq = {0};
+    doublereal rn = {0};
+    integer mk1 = {0}, kx1 = {0}, kx2 = {0}, ky1 = {0}, ky2 = {0};
+    doublereal acc = {0}, one = {0};
+    integer lax = {0}, lay = {0}, lbx = {0}, lby = {0}, lri = {0}, mpm = {0}, 
+	    nxe = {0}, nye = {0}, nxk = {0}, lsx = {0}, lsy = {0}, ich1 = {0},
+	     ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer npl1 = {0}, nk1x = {0}, nk1y = {0};
+    doublereal half = {0};
+    integer ncof = {0}, ifbx = {0}, ifby = {0}, iter = {0};
+    doublereal fpms = {0};
+    integer ifsx = {0}, ifsy = {0}, nplx = {0}, nply = {0}, mynx = {0}, nminx 
+	    = {0}, nminy = {0}, nmaxx = {0}, nmaxy = {0};
     extern doublereal fprati_(doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *);
     extern /* Recursive Subroutine */ int fpgrre_(integer *, integer *, 
@@ -62,7 +63,7 @@ static integer c__1 = 1;
 	     integer *), fpknot_(doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, integer *, integer *, integer 
 	    *);
-    integer nrintx = {}, nrinty = {};
+    integer nrintx = {0}, nrinty = {0};
 
 /*  .. */
 /*  ..scalar arguments.. */

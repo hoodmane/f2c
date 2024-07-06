@@ -26,12 +26,12 @@ static integer c__3 = 3;
 
     /* Local variables */
     doublereal h__[4] = {};
-    integer i__ = {}, j = {}, k = {}, l = {}, m = {}, i1 = {}, j1 = {}, l1 = {
-	    }, l2 = {}, l3 = {};
-    doublereal tb = {}, te = {}, sp = {};
-    integer nu4 = {}, nv4 = {};
-    doublereal arg = {};
-    integer nuv = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, m = {0}, i1 = {0}, j1 = {0},
+	     l1 = {0}, l2 = {0}, l3 = {0};
+    doublereal tb = {0}, te = {0}, sp = {0};
+    integer nu4 = {0}, nv4 = {0};
+    doublereal arg = {0};
+    integer nuv = {0};
     extern /* Recursive Subroutine */ int fpbspl_(doublereal *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *);
 

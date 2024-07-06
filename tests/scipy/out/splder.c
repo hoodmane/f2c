@@ -21,17 +21,17 @@
 
     /* Local variables */
     doublereal h__[6] = {};
-    integer i__ = {}, j = {}, l = {}, k1 = {}, k2 = {}, l1 = {}, l2 = {}, k3 =
-	     {};
-    doublereal ak = {};
-    integer kk = {};
-    doublereal tb = {};
-    integer ll = {};
-    doublereal te = {};
-    integer nn = {};
-    doublereal sp = {};
-    integer nk1 = {}, nk2 = {};
-    doublereal fac = {}, arg = {};
+    integer i__ = {0}, j = {0}, l = {0}, k1 = {0}, k2 = {0}, l1 = {0}, l2 = {
+	    0}, k3 = {0};
+    doublereal ak = {0};
+    integer kk = {0};
+    doublereal tb = {0};
+    integer ll = {0};
+    doublereal te = {0};
+    integer nn = {0};
+    doublereal sp = {0};
+    integer nk1 = {0}, nk2 = {0};
+    doublereal fac = {0}, arg = {0};
     extern /* Recursive Subroutine */ int fpbspl_(doublereal *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *);
 

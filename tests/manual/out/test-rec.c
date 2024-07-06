@@ -31,7 +31,7 @@ integer func_rec__(void)
     integer ret_val;
 
     /* Local variables */
-    integer x = {};
+    integer x = {0};
 
     x = 1;
     ret_val = x;
@@ -48,7 +48,7 @@ integer func_rec__(void)
 
 /* Recursive Subroutine */ int subr_rec__(void)
 {
-    integer x = {};
+    integer x = {0};
 
     x = 1;
     return 0;

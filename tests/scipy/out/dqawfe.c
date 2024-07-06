@@ -35,35 +35,35 @@ static integer c__1 = 1;
     doublereal d__1, d__2;
 
     /* Local variables */
-    integer l = {};
-    doublereal c1 = {}, c2 = {}, p1 = {}, dl = {}, ep = {};
-    integer ll = {};
-    doublereal dla = {}, drl = {}, eps = {};
-    integer nev = {};
-    doublereal fact = {}, epsa = {};
-    integer last = {}, nres = {};
+    integer l = {0};
+    doublereal c1 = {0}, c2 = {0}, p1 = {0}, dl = {0}, ep = {0};
+    integer ll = {0};
+    doublereal dla = {0}, drl = {0}, eps = {0};
+    integer nev = {0};
+    doublereal fact = {0}, epsa = {0};
+    integer last = {0}, nres = {0};
     doublereal psum[52] = {};
     extern /* Recursive Subroutine */ int dqelg_(integer *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *);
-    doublereal cycle = {};
-    integer ktmin = {};
-    doublereal uflow = {};
+    doublereal cycle = {0};
+    integer ktmin = {0};
+    doublereal uflow = {0};
     extern doublereal d1mach_(integer *);
     doublereal res3la[3] = {};
-    integer numrl2 = {};
+    integer numrl2 = {0};
     extern /* Recursive Subroutine */ int dqagie_(D_fp, doublereal *, integer 
 	    *, doublereal *, doublereal *, integer *, doublereal *, 
 	    doublereal *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, integer *, integer *);
-    doublereal abseps = {}, correc = {};
+    doublereal abseps = {0}, correc = {0};
     extern /* Recursive Subroutine */ int dqawoe_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *,
 	     integer *, integer *, integer *, doublereal *, doublereal *, 
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, integer *, integer *, integer *, 
 	    doublereal *);
-    integer momcom = {};
-    doublereal reseps = {}, errsum = {};
+    integer momcom = {0};
+    doublereal reseps = {0}, errsum = {0};
 
 /* ***begin prologue  dqawfe */
 /* ***date written   800101   (yymmdd) */

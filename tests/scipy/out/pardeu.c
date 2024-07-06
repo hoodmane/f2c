@@ -26,12 +26,12 @@ static integer c__1 = 1;
     integer i__1, i__2, i__3;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l1 = {}, l2 = {}, m0 = {}, m1 = {};
-    doublereal ak = {};
-    integer nc = {}, mm = {}, lx = {}, ly = {}, kx1 = {}, ky1 = {};
-    doublereal fac = {};
-    integer kkx = {}, kky = {}, iwx = {}, iwy = {}, nxx = {}, nyy = {}, nkx1 =
-	     {}, nky1 = {}, lwest = {};
+    integer i__ = {0}, j = {0}, l1 = {0}, l2 = {0}, m0 = {0}, m1 = {0};
+    doublereal ak = {0};
+    integer nc = {0}, mm = {0}, lx = {0}, ly = {0}, kx1 = {0}, ky1 = {0};
+    doublereal fac = {0};
+    integer kkx = {0}, kky = {0}, iwx = {0}, iwy = {0}, nxx = {0}, nyy = {0}, 
+	    nkx1 = {0}, nky1 = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpbisp_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 

@@ -19,9 +19,9 @@
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {};
-    doublereal c1 = {}, c2 = {}, c3 = {}, cn = {};
-    integer ii = {}, np4 = {}, nt4 = {}, npp = {}, ncof = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0};
+    doublereal c1 = {0}, c2 = {0}, c3 = {0}, cn = {0};
+    integer ii = {0}, np4 = {0}, nt4 = {0}, npp = {0}, ncof = {0};
 
 /*  given the coefficients of a spherical spline function, subroutine */
 /*  fprpsp calculates the coefficients in the standard b-spline re- */

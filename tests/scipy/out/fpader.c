@@ -20,10 +20,11 @@
 
     /* Local variables */
     doublereal h__[20] = {};
-    integer i__ = {}, j = {}, j1 = {}, j2 = {};
-    doublereal ak = {};
-    integer ik = {}, jj = {}, ki = {}, kj = {}, li = {}, lj = {}, lk = {};
-    doublereal fac = {}, one = {};
+    integer i__ = {0}, j = {0}, j1 = {0}, j2 = {0};
+    doublereal ak = {0};
+    integer ik = {0}, jj = {0}, ki = {0}, kj = {0}, li = {0}, lj = {0}, lk = {
+	    0};
+    doublereal fac = {0}, one = {0};
 
 /*  subroutine fpader calculates the derivatives */
 /*             (j-1) */

@@ -29,9 +29,9 @@ doublereal evapol_(doublereal *tu, integer *nu, doublereal *tv, integer *nv,
     double atan2(doublereal, doublereal), sqrt(doublereal);
 
     /* Local variables */
-    doublereal f = {}, r__ = {}, u = {}, v = {};
-    integer ier = {};
-    doublereal one = {}, wrk[8] = {}, dist = {};
+    doublereal f = {0}, r__ = {0}, u = {0}, v = {0};
+    integer ier = {0};
+    doublereal one = {0}, wrk[8] = {}, dist = {0};
     integer iwrk[2] = {};
     extern /* Recursive Subroutine */ int bispev_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 

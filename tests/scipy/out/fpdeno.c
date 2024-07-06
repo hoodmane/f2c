@@ -15,7 +15,7 @@
 /* Recursive Subroutine */ int fpdeno_(integer *maxtr, integer *up, integer *
 	left, integer *right, integer *nbind, integer *merk)
 {
-    integer i__ = {}, j = {}, k = {}, l = {}, point = {}, niveau = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, point = {0}, niveau = {0};
 
 /*  subroutine fpdeno frees the nodes of all branches of a triply linked */
 /*  tree with length < nbind by putting to zero their up field. */

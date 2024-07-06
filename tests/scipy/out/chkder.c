@@ -34,10 +34,10 @@ static integer c__1 = 1;
     double sqrt(doublereal), d_lg10(doublereal *);
 
     /* Local variables */
-    integer i__ = {}, j = {};
-    doublereal eps = {}, epsf = {}, temp = {}, epsmch = {};
+    integer i__ = {0}, j = {0};
+    doublereal eps = {0}, epsf = {0}, temp = {0}, epsmch = {0};
     extern doublereal dpmpar_(integer *);
-    doublereal epslog = {};
+    doublereal epslog = {0};
 
 /*     ********** */
 

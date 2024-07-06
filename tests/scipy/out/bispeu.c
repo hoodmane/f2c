@@ -25,7 +25,7 @@ static integer c__1 = 1;
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, iwrk[2] = {}, lwest = {};
+    integer i__ = {0}, iwrk[2] = {}, lwest = {0};
     extern /* Recursive Subroutine */ int fpbisp_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 

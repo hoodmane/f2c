@@ -23,9 +23,9 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, ie = {}, iw = {};
-    doublereal one = {};
-    integer lww = {}, kwest = {}, lwest = {};
+    integer i__ = {0}, ie = {0}, iw = {0};
+    doublereal one = {0};
+    integer lww = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpcoco_(integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, integer *, integer *, integer *, integer *, 

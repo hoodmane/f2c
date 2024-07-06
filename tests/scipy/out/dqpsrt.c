@@ -20,9 +20,9 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, ido = {}, ibeg = {}, jbnd = {}, isucc = 
-	    {}, jupbn = {};
-    doublereal errmin = {}, errmax = {};
+    integer i__ = {0}, j = {0}, k = {0}, ido = {0}, ibeg = {0}, jbnd = {0}, 
+	    isucc = {0}, jupbn = {0};
+    doublereal errmin = {0}, errmax = {0};
 
 /* ***begin prologue  dqpsrt */
 /* ***refer to  dqage,dqagie,dqagpe,dqawse */

@@ -22,7 +22,7 @@
     double sqrt(doublereal);
 
     /* Local variables */
-    doublereal dd = {}, one = {}, store = {};
+    doublereal dd = {0}, one = {0}, store = {0};
 
 /*  subroutine fpgivs calculates the parameters of a givens */
 /*  transformation . */

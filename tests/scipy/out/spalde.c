@@ -16,7 +16,7 @@
 	c__, integer *nc, integer *k1, doublereal *x, doublereal *d__, 
 	integer *ier)
 {
-    integer l = {}, nk1 = {};
+    integer l = {0}, nk1 = {0};
     extern /* Recursive Subroutine */ int fpader_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *);
 

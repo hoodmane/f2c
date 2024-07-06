@@ -22,22 +22,22 @@
     double cos(doublereal), sin(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {};
-    doublereal c1 = {}, c2 = {}, f1 = {}, f2 = {}, f3 = {}, s1 = {}, s2 = {}, 
-	    hc[5] = {};
-    integer ic = {};
-    doublereal ak = {}, co[5] = {};
-    integer jj = {}, li = {}, lj = {};
+    integer i__ = {0}, j = {0}, k = {0};
+    doublereal c1 = {0}, c2 = {0}, f1 = {0}, f2 = {0}, f3 = {0}, s1 = {0}, s2 
+	    = {0}, hc[5] = {};
+    integer ic = {0};
+    doublereal ak = {0}, co[5] = {};
+    integer jj = {0}, li = {0}, lj = {0};
     doublereal rc[3] = {};
-    integer ll = {};
+    integer ll = {0};
     doublereal hs[5] = {};
-    integer is = {};
+    integer is = {0};
     doublereal si[5] = {}, rs[3] = {};
-    integer jp1 = {}, jp4 = {}, nm3 = {}, nm7 = {};
-    doublereal fac = {}, one = {};
-    integer ipj = {}, nmj = {};
-    doublereal eps = {}, six = {}, con1 = {}, con2 = {}, beta = {}, sign = {},
-	     term = {}, delta = {}, quart = {};
+    integer jp1 = {0}, jp4 = {0}, nm3 = {0}, nm7 = {0};
+    doublereal fac = {0}, one = {0};
+    integer ipj = {0}, nmj = {0};
+    doublereal eps = {0}, six = {0}, con1 = {0}, con2 = {0}, beta = {0}, sign 
+	    = {0}, term = {0}, delta = {0}, quart = {0};
     extern /* Recursive Subroutine */ int fpcsin_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *);

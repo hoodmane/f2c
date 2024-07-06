@@ -36,13 +36,14 @@ static integer c__5 = 5;
 	    e_wsle(void);
 
     /* Local variables */
-    integer i__ = {}, la = {}, lf = {}, ki = {}, lh = {}, kn = {}, lq = {}, 
-	    ib1 = {}, jb1 = {}, ib3 = {}, km1 = {}, km2 = {}, kx1 = {}, ky1 = 
-	    {}, lff = {}, lco = {}, nek = {}, lfp = {}, lbx = {}, lby = {};
-    doublereal tol = {};
-    integer nxk = {}, nyk = {}, nmx = {}, nmy = {}, lsx = {}, lsy = {}, nreg =
-	     {}, kmax = {}, nest = {}, ncest = {}, maxit = {}, nminx = {}, 
-	    nminy = {}, nrint = {}, kwest = {}, lwest = {};
+    integer i__ = {0}, la = {0}, lf = {0}, ki = {0}, lh = {0}, kn = {0}, lq = 
+	    {0}, ib1 = {0}, jb1 = {0}, ib3 = {0}, km1 = {0}, km2 = {0}, kx1 = 
+	    {0}, ky1 = {0}, lff = {0}, lco = {0}, nek = {0}, lfp = {0}, lbx = 
+	    {0}, lby = {0};
+    doublereal tol = {0};
+    integer nxk = {0}, nyk = {0}, nmx = {0}, nmy = {0}, lsx = {0}, lsy = {0}, 
+	    nreg = {0}, kmax = {0}, nest = {0}, ncest = {0}, maxit = {0}, 
+	    nminx = {0}, nminy = {0}, nrint = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpsurf_(integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, integer *,

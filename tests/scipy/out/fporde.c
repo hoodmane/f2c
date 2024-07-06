@@ -20,9 +20,10 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, k = {}, l = {}, k1 = {}, l1 = {}, im = {};
-    doublereal xi = {}, yi = {};
-    integer kx1 = {}, ky1 = {}, num = {}, nyy = {}, nk1x = {}, nk1y = {};
+    integer i__ = {0}, k = {0}, l = {0}, k1 = {0}, l1 = {0}, im = {0};
+    doublereal xi = {0}, yi = {0};
+    integer kx1 = {0}, ky1 = {0}, num = {0}, nyy = {0}, nk1x = {0}, nk1y = {0}
+	    ;
 
 /*  subroutine fporde sorts the data points (x(i),y(i)),i=1,2,...,m */
 /*  according to the panel tx(l)<=x<tx(l+1),ty(k)<=y<ty(k+1), they belong */

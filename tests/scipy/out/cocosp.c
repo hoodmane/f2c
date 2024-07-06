@@ -26,11 +26,11 @@ static integer c__3 = 3;
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, n6 = {}, ia = {}, ib = {}, ic = {}, mb = {}, ji = {}, 
-	    jl = {}, iq = {}, nm = {}, jr = {}, iu = {}, ju = {}, iz = {}, 
-	    jib = {}, jjb = {};
-    doublereal one = {};
-    integer izz = {}, kwest = {}, lwest = {};
+    integer i__ = {0}, n6 = {0}, ia = {0}, ib = {0}, ic = {0}, mb = {0}, ji = 
+	    {0}, jl = {0}, iq = {0}, nm = {0}, jr = {0}, iu = {0}, ju = {0}, 
+	    iz = {0}, jib = {0}, jjb = {0};
+    doublereal one = {0};
+    integer izz = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchec_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpcosp_(integer *,
 	     doublereal *, doublereal *, doublereal *, integer *, doublereal *

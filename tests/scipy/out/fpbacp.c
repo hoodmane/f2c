@@ -20,8 +20,9 @@
     integer a_dim1, a_offset, b_dim1, b_offset, i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, i1 = {}, l0 = {}, l1 = {}, n2 = {};
-    doublereal store = {};
+    integer i__ = {0}, j = {0}, l = {0}, i1 = {0}, l0 = {0}, l1 = {0}, n2 = {
+	    0};
+    doublereal store = {0};
 
 /*  subroutine fpbacp calculates the solution of the system of equations */
 /*  g * c = z  with g  a n x n upper triangular matrix of the form */

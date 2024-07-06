@@ -22,10 +22,10 @@
     integer i__1;
 
     /* Local variables */
-    integer i__ = {}, j = {}, k1 = {}, k2 = {}, ia = {}, ib = {}, ig = {}, iq 
-	    = {}, iz = {}, ifp = {};
-    doublereal tol = {};
-    integer nmin = {}, maxit = {}, lwest = {};
+    integer i__ = {0}, j = {0}, k1 = {0}, k2 = {0}, ia = {0}, ib = {0}, ig = {
+	    0}, iq = {0}, iz = {0}, ifp = {0};
+    doublereal tol = {0};
+    integer nmin = {0}, maxit = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fpchec_(doublereal *, integer *, 
 	    doublereal *, integer *, integer *, integer *), fpcurf_(integer *,
 	     doublereal *, doublereal *, doublereal *, integer *, doublereal *

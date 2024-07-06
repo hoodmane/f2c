@@ -36,30 +36,30 @@ static integer c__1 = 1;
     double atan2(doublereal, doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {};
-    doublereal p = {}, f1 = {}, f2 = {}, f3 = {};
-    integer i1 = {}, i2 = {}, l1 = {}, l2 = {}, l3 = {}, l4 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {}, vb = {}, pi = {}, ve = {};
-    integer nn = {};
-    doublereal rn = {};
-    integer ju = {}, mu0 = {}, mu1 = {};
-    doublereal acc = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal p = {0}, f1 = {0}, f2 = {0}, f3 = {0};
+    integer i1 = {0}, i2 = {0}, l1 = {0}, l2 = {0}, l3 = {0}, l4 = {0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0}, vb = {0}, pi = {0}, ve = {0};
+    integer nn = {0};
+    doublereal rn = {0};
+    integer ju = {0}, mu0 = {0}, mu1 = {0};
+    doublereal acc = {0};
     integer idd[4] = {};
-    doublereal one = {}, per = {};
-    integer nue = {}, nve = {}, mpm = {};
+    doublereal one = {0}, per = {0};
+    integer nue = {0}, nve = {0}, mpm = {0};
     doublereal drr[6] = {};
-    integer ktu = {}, ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer npl1 = {}, ifbu = {}, ifbv = {}, iter = {};
-    doublereal fpms = {}, rmin = {}, rmax = {};
-    integer ifsu = {}, ifsv = {}, nplu = {}, nplv = {}, mumin = {}, numax = {}
-	    , nvmax = {};
+    integer ktu = {0}, ich1 = {0}, ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer npl1 = {0}, ifbu = {0}, ifbv = {0}, iter = {0};
+    doublereal fpms = {0}, rmin = {0}, rmax = {0};
+    integer ifsu = {0}, ifsv = {0}, nplu = {0}, nplv = {0}, mumin = {0}, 
+	    numax = {0}, nvmax = {0};
     extern doublereal fprati_(doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *);
     extern /* Recursive Subroutine */ int fpknot_(doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    integer *, integer *);
-    integer istart = {};
+    integer istart = {0};
     extern /* Recursive Subroutine */ int fpopsp_(integer *, integer *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 
@@ -67,7 +67,7 @@ static integer c__1 = 1;
 	    doublereal *, integer *, integer *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *,
 	     doublereal *, integer *, integer *, doublereal *, integer *);
-    integer nrintu = {}, nrintv = {};
+    integer nrintu = {0}, nrintv = {0};
 
 /*  .. */
 /*  ..scalar arguments.. */

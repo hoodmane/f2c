@@ -30,27 +30,28 @@
 
     /* Local variables */
     doublereal h__[7] = {};
-    integer i__ = {}, j = {}, k = {}, l = {}, i1 = {}, i2 = {}, i3 = {}, k1 = 
-	    {}, k2 = {}, l1 = {}, l2 = {}, n1 = {}, ic = {}, iq = {}, it = {},
-	     iz = {};
-    doublereal fac = {}, arg = {}, one = {}, cos__ = {}, sin__ = {}, piv = {};
-    integer nk1x = {}, nk1y = {};
-    doublereal half = {};
-    integer ncof = {};
-    doublereal term = {}, pinv = {};
-    integer irot = {}, numx = {}, numy = {}, numx1 = {}, numy1 = {}, nrold = {
-	    };
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, i1 = {0}, i2 = {0}, i3 = {0}
+	    , k1 = {0}, k2 = {0}, l1 = {0}, l2 = {0}, n1 = {0}, ic = {0}, iq =
+	     {0}, it = {0}, iz = {0};
+    doublereal fac = {0}, arg = {0}, one = {0}, cos__ = {0}, sin__ = {0}, piv 
+	    = {0};
+    integer nk1x = {0}, nk1y = {0};
+    doublereal half = {0};
+    integer ncof = {0};
+    doublereal term = {0}, pinv = {0};
+    integer irot = {0}, numx = {0}, numy = {0}, numx1 = {0}, numy1 = {0}, 
+	    nrold = {0};
     extern /* Recursive Subroutine */ int fpback_(doublereal *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *);
-    integer ibandx = {}, ibandy = {};
+    integer ibandx = {0}, ibandy = {0};
     extern /* Recursive Subroutine */ int fpdisc_(doublereal *, integer *, 
 	    integer *, doublereal *, integer *), fpbspl_(doublereal *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *);
-    integer number = {};
+    integer number = {0};
     extern /* Recursive Subroutine */ int fprota_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *), fpgivs_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    integer nroldx = {}, nroldy = {};
+    integer nroldx = {0}, nroldy = {0};
 
 /*  .. */
 /*  ..scalar arguments.. */

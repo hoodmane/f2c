@@ -33,11 +33,11 @@ static integer c__1 = 1;
     double sqrt(doublereal);
 
     /* Local variables */
-    doublereal h__ = {};
-    integer i__ = {}, j = {}, k = {};
-    doublereal eps = {}, temp = {};
-    integer msum = {};
-    doublereal epsmch = {};
+    doublereal h__ = {0};
+    integer i__ = {0}, j = {0}, k = {0};
+    doublereal eps = {0}, temp = {0};
+    integer msum = {0};
+    doublereal epsmch = {0};
     extern doublereal dpmpar_(integer *);
 
 /*     ********** */

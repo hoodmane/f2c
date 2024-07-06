@@ -20,8 +20,8 @@
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, n4 = {};
-    doublereal rc = {}, rs = {};
+    integer i__ = {0}, j = {0}, n4 = {0};
+    doublereal rc = {0}, rs = {0};
     extern /* Recursive Subroutine */ int fpbfou_(doublereal *, integer *, 
 	    doublereal *, doublereal *, doublereal *);
 

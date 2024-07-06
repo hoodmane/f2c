@@ -26,17 +26,17 @@
     integer i__1;
 
     /* Local variables */
-    integer j = {}, ml = {}, lr = {}, mu = {}, mode = {}, nfev = {};
-    doublereal xtol = {};
-    integer index = {};
+    integer j = {0}, ml = {0}, lr = {0}, mu = {0}, mode = {0}, nfev = {0};
+    doublereal xtol = {0};
+    integer index = {0};
     extern /* Recursive Subroutine */ int hybrd_(U_fp, integer *, doublereal *
 	    , doublereal *, doublereal *, integer *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, doublereal *, doublereal *, doublereal *,
 	     doublereal *);
-    doublereal epsfcn = {};
-    integer maxfev = {}, nprint = {};
+    doublereal epsfcn = {0};
+    integer maxfev = {0}, nprint = {0};
 
 /*     ********** */
 

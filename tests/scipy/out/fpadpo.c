@@ -24,8 +24,8 @@ static integer c__0 = 0;
     integer i__1, i__2;
 
     /* Local variables */
-    integer i__ = {}, j = {}, l = {}, k1 = {}, l1 = {}, n1 = {}, n2 = {}, ii =
-	     {}, jj = {}, nk1 = {}, nk2 = {};
+    integer i__ = {0}, j = {0}, l = {0}, k1 = {0}, l1 = {0}, n1 = {0}, n2 = {
+	    0}, ii = {0}, jj = {0}, nk1 = {0}, nk2 = {0};
     extern /* Recursive Subroutine */ int fpinst_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *);

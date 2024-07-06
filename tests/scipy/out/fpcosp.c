@@ -30,18 +30,18 @@ static integer c__3 = 3;
     doublereal d__1;
 
     /* Local variables */
-    doublereal f = {}, h__[4] = {};
-    integer i__ = {}, j = {}, k = {}, l = {}, i1 = {}, j1 = {}, j2 = {}, j3 = 
-	    {}, k1 = {}, k2 = {}, k3 = {}, k4 = {}, k5 = {}, k6 = {}, l1 = {},
-	     l2 = {}, l3 = {}, n1 = {}, n4 = {}, n6 = {};
-    doublereal wi = {}, xi = {};
-    integer lp1 = {}, kdim = {}, merk = {}, nbind = {}, count = {};
+    doublereal f = {0}, h__[4] = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, i1 = {0}, j1 = {0}, j2 = {0}
+	    , j3 = {0}, k1 = {0}, k2 = {0}, k3 = {0}, k4 = {0}, k5 = {0}, k6 =
+	     {0}, l1 = {0}, l2 = {0}, l3 = {0}, n1 = {0}, n4 = {0}, n6 = {0};
+    doublereal wi = {0}, xi = {0};
+    integer lp1 = {0}, kdim = {0}, merk = {0}, nbind = {0}, count = {0};
     extern /* Recursive Subroutine */ int fpadno_(integer *, integer *, 
 	    integer *, integer *, integer *, integer *, integer *, integer *, 
 	    integer *, integer *), fpdeno_(integer *, integer *, integer *, 
 	    integer *, integer *, integer *), fpbspl_(doublereal *, integer *,
 	     integer *, doublereal *, integer *, doublereal *);
-    integer number = {};
+    integer number = {0};
     extern /* Recursive Subroutine */ int fpseno_(integer *, integer *, 
 	    integer *, integer *, integer *, integer *, integer *, integer *);
 

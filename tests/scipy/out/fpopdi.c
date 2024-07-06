@@ -32,16 +32,16 @@ static integer c__1 = 1;
 
     /* Local variables */
     doublereal a[36] = {}, g[6] = {};
-    integer i__ = {}, j = {}, l = {}, i1 = {}, l1 = {}, l2 = {}, mm = {}, lq =
-	     {}, nr[3] = {};
-    doublereal sq = {};
-    integer id0 = {}, laa = {}, lbb = {}, lcc = {}, lau = {}, lbu = {}, lbv = 
-	    {}, lcs = {}, lri = {};
-    doublereal res = {}, sqq = {};
-    integer lsu = {}, lsv = {};
+    integer i__ = {0}, j = {0}, l = {0}, i1 = {0}, l1 = {0}, l2 = {0}, mm = {
+	    0}, lq = {0}, nr[3] = {};
+    doublereal sq = {0};
+    integer id0 = {0}, laa = {0}, lbb = {0}, lcc = {0}, lau = {0}, lbu = {0}, 
+	    lbv = {0}, lcs = {0}, lri = {0};
+    doublereal res = {0}, sqq = {0};
+    integer lsu = {0}, lsv = {0};
     doublereal dzz[3] = {}, sum[3] = {};
-    integer lav1 = {}, lav2 = {}, iop0 = {}, iop1 = {}, mvnu = {};
-    doublereal step1 = {}, step2 = {}, delta[3] = {}, three = {};
+    integer lav1 = {0}, lav2 = {0}, iop0 = {0}, iop1 = {0}, mvnu = {0};
+    doublereal step1 = {0}, step2 = {0}, delta[3] = {}, three = {0};
     extern /* Recursive Subroutine */ int fpgrdi_(integer *, integer *, 
 	    integer *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
@@ -52,7 +52,7 @@ static integer c__1 = 1;
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, integer *, integer *);
-    integer number = {};
+    integer number = {0};
     extern /* Recursive Subroutine */ int fpsysy_(doublereal *, integer *, 
 	    doublereal *);
 

@@ -32,29 +32,29 @@ static integer c__1 = 1;
 
     /* Local variables */
     doublereal h__[6] = {};
-    integer i__ = {}, j = {}, l = {};
-    doublereal p = {}, c1 = {}, d1 = {}, f1 = {}, f2 = {}, f3 = {};
-    integer i1 = {}, i2 = {}, i3 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {};
-    integer j1 = {}, j2 = {}, k3 = {}, l0 = {}, l1 = {}, l5 = {}, m1 = {}, n7 
-	    = {}, n8 = {};
+    integer i__ = {0}, j = {0}, l = {0};
+    doublereal p = {0}, c1 = {0}, d1 = {0}, f1 = {0}, f2 = {0}, f3 = {0};
+    integer i1 = {0}, i2 = {0}, i3 = {0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0};
+    integer j1 = {0}, j2 = {0}, k3 = {0}, l0 = {0}, l1 = {0}, l5 = {0}, m1 = {
+	    0}, n7 = {0}, n8 = {0};
     doublereal h1[7] = {}, h2[6] = {};
-    integer n10 = {}, n11 = {}, ij = {}, ik = {}, jk = {}, kk = {}, mm = {}, 
-	    it = {};
-    doublereal wi = {}, xi = {}, yi = {}, rn = {}, fp0 = {};
-    integer kk1 = {}, nk1 = {}, nk2 = {};
-    doublereal acc = {}, one = {}, cos__ = {}, per = {}, sin__ = {};
-    integer new__ = {};
-    doublereal piv = {};
-    integer ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer npl1 = {};
-    doublereal half = {};
-    integer jper = {}, nmin = {}, iter = {}, nmax = {};
-    doublereal fpms = {}, term = {}, pinv = {}, fpold = {}, fpart = {};
-    integer nrint = {};
-    doublereal store = {};
-    integer nplus = {};
+    integer n10 = {0}, n11 = {0}, ij = {0}, ik = {0}, jk = {0}, kk = {0}, mm =
+	     {0}, it = {0};
+    doublereal wi = {0}, xi = {0}, yi = {0}, rn = {0}, fp0 = {0};
+    integer kk1 = {0}, nk1 = {0}, nk2 = {0};
+    doublereal acc = {0}, one = {0}, cos__ = {0}, per = {0}, sin__ = {0};
+    integer new__ = {0};
+    doublereal piv = {0};
+    integer ich1 = {0}, ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer npl1 = {0};
+    doublereal half = {0};
+    integer jper = {0}, nmin = {0}, iter = {0}, nmax = {0};
+    doublereal fpms = {0}, term = {0}, pinv = {0}, fpold = {0}, fpart = {0};
+    integer nrint = {0};
+    doublereal store = {0};
+    integer nplus = {0};
     extern /* Recursive Subroutine */ int fpbacp_(doublereal *, doublereal *, 
 	    doublereal *, integer *, integer *, doublereal *, integer *, 
 	    integer *), fpdisc_(doublereal *, integer *, integer *, 

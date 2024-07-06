@@ -41,27 +41,27 @@ static integer c__4 = 4;
 
     /* Local variables */
     doublereal h__[5] = {};
-    integer i__ = {}, j = {}, k = {}, l = {}, i0 = {}, i1 = {}, i2 = {}, i3 = 
-	    {}, j0 = {}, j1 = {}, k1 = {}, k2 = {}, l0 = {}, l1 = {}, l2 = {},
-	     n1 = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0}, i0 = {0}, i1 = {0}, i2 = {0}
+	    , i3 = {0}, j0 = {0}, j1 = {0}, k1 = {0}, k2 = {0}, l0 = {0}, l1 =
+	     {0}, l2 = {0}, n1 = {0};
     doublereal h1[5] = {}, h2[4] = {};
-    integer ic = {};
-    doublereal co = {};
-    integer ii = {}, ij = {}, ik = {};
-    doublereal si = {};
-    integer iq = {}, it = {}, ir = {}, jj = {}, jk = {}, nu4 = {}, nv4 = {}, 
-	    nu7 = {}, nu8 = {}, nu9 = {}, nv7 = {}, nv8 = {};
-    doublereal fac = {}, dr01 = {}, dr02 = {}, dr03 = {}, arg = {}, dr11 = {},
-	     dr12 = {}, dr13 = {}, one = {};
-    integer nv11 = {};
-    doublereal piv = {}, fac0 = {}, fac1 = {};
-    integer mvv = {}, nuu = {};
-    doublereal half = {};
-    integer ncof = {}, jper = {};
-    doublereal term = {}, pinv = {};
-    integer irot = {}, numu = {}, numv = {}, numu1 = {}, numv1 = {};
-    doublereal three = {};
-    integer nrold = {};
+    integer ic = {0};
+    doublereal co = {0};
+    integer ii = {0}, ij = {0}, ik = {0};
+    doublereal si = {0};
+    integer iq = {0}, it = {0}, ir = {0}, jj = {0}, jk = {0}, nu4 = {0}, nv4 =
+	     {0}, nu7 = {0}, nu8 = {0}, nu9 = {0}, nv7 = {0}, nv8 = {0};
+    doublereal fac = {0}, dr01 = {0}, dr02 = {0}, dr03 = {0}, arg = {0}, dr11 
+	    = {0}, dr12 = {0}, dr13 = {0}, one = {0};
+    integer nv11 = {0};
+    doublereal piv = {0}, fac0 = {0}, fac1 = {0};
+    integer mvv = {0}, nuu = {0};
+    doublereal half = {0};
+    integer ncof = {0}, jper = {0};
+    doublereal term = {0}, pinv = {0};
+    integer irot = {0}, numu = {0}, numv = {0}, numu1 = {0}, numv1 = {0};
+    doublereal three = {0};
+    integer nrold = {0};
     extern /* Recursive Subroutine */ int fpcyt1_(doublereal *, integer *, 
 	    integer *), fpcyt2_(doublereal *, integer *, doublereal *, 
 	    doublereal *, integer *), fpback_(doublereal *, doublereal *, 
@@ -71,11 +71,11 @@ static integer c__4 = 4;
 	    integer *, integer *, doublereal *, integer *), fpbspl_(
 	    doublereal *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *);
-    integer number = {};
+    integer number = {0};
     extern /* Recursive Subroutine */ int fprota_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *), fpgivs_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
-    integer nroldu = {}, nroldv = {};
+    integer nroldu = {0}, nroldv = {0};
 
 /*  .. */
 /*  ..scalar arguments.. */

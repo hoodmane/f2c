@@ -38,17 +38,17 @@
     double pow_dd(doublereal *, doublereal *), log(doublereal);
 
     /* Local variables */
-    integer i__ = {};
-    doublereal u = {}, dc = {}, fix = {}, fval[25] = {}, res12 = {}, res24 = {
-	    };
-    integer isym = {};
-    doublereal cheb12[13] = {}, cheb24[25] = {}, hlgth = {}, centr = {};
+    integer i__ = {0};
+    doublereal u = {0}, dc = {0}, fix = {0}, fval[25] = {}, res12 = {0}, 
+	    res24 = {0};
+    integer isym = {0};
+    doublereal cheb12[13] = {}, cheb24[25] = {}, hlgth = {0}, centr = {0};
     extern /* Recursive Subroutine */ int dqk15w_(D_fp, D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *, doublereal *,
 	     doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *), dqcheb_(doublereal *, doublereal *, doublereal *, 
 	    doublereal *);
-    doublereal factor = {}, resabs = {};
+    doublereal factor = {0}, resabs = {0};
     extern doublereal dqwgts_();
 
 /* ***begin prologue  dqc25s */

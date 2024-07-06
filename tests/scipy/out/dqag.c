@@ -21,7 +21,7 @@ static integer c__26 = 26;
 	result, doublereal *abserr, integer *neval, integer *ier, integer *
 	limit, integer *lenw, integer *last, integer *iwork, doublereal *work)
 {
-    integer l1 = {}, l2 = {}, l3 = {}, lvl = {};
+    integer l1 = {0}, l2 = {0}, l3 = {0}, lvl = {0};
     extern /* Recursive Subroutine */ int dqage_(D_fp, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 

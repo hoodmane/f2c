@@ -28,19 +28,20 @@
     double atan2(doublereal, doublereal), sqrt(doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {};
-    doublereal r__ = {};
-    integer la = {}, lf = {}, ki = {}, lh = {};
-    doublereal pi = {};
-    integer kn = {}, lq = {}, ib1 = {}, ib3 = {}, nu4 = {}, nv4 = {}, lcc = {}
-	    , ncc = {}, lff = {}, lco = {};
-    doublereal one = {};
-    integer lbu = {}, lcs = {}, lbv = {}, lfp = {}, lro = {};
-    doublereal tol = {};
-    integer lsu = {}, lsv = {}, nuu = {}, nvv = {}, nreg = {}, ipar = {};
-    doublereal dist = {};
-    integer iopt1 = {}, iopt2 = {}, iopt3 = {}, ncest = {}, maxit = {}, nvmin 
-	    = {}, nrint = {}, kwest = {}, lwest = {};
+    integer i__ = {0}, j = {0};
+    doublereal r__ = {0};
+    integer la = {0}, lf = {0}, ki = {0}, lh = {0};
+    doublereal pi = {0};
+    integer kn = {0}, lq = {0}, ib1 = {0}, ib3 = {0}, nu4 = {0}, nv4 = {0}, 
+	    lcc = {0}, ncc = {0}, lff = {0}, lco = {0};
+    doublereal one = {0};
+    integer lbu = {0}, lcs = {0}, lbv = {0}, lfp = {0}, lro = {0};
+    doublereal tol = {0};
+    integer lsu = {0}, lsv = {0}, nuu = {0}, nvv = {0}, nreg = {0}, ipar = {0}
+	    ;
+    doublereal dist = {0};
+    integer iopt1 = {0}, iopt2 = {0}, iopt3 = {0}, ncest = {0}, maxit = {0}, 
+	    nvmin = {0}, nrint = {0}, kwest = {0}, lwest = {0};
     extern /* Recursive Subroutine */ int fppola_(integer *, integer *, 
 	    integer *, integer *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, D_fp, doublereal *, integer *, integer *, 

@@ -22,8 +22,8 @@ static integer c__26 = 26;
 	integer *lst, integer *leniw, integer *maxp1, integer *lenw, integer *
 	iwork, doublereal *work)
 {
-    integer l1 = {}, l2 = {}, l3 = {}, l4 = {}, l5 = {}, l6 = {}, ll2 = {}, 
-	    lvl = {}, last = {}, limit = {};
+    integer l1 = {0}, l2 = {0}, l3 = {0}, l4 = {0}, l5 = {0}, l6 = {0}, ll2 = 
+	    {0}, lvl = {0}, last = {0}, limit = {0};
     extern /* Recursive Subroutine */ int dqawfe_(D_fp, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    integer *, doublereal *, doublereal *, integer *, integer *, 

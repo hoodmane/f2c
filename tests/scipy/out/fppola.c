@@ -41,45 +41,45 @@ static integer c__5 = 5;
 	    doublereal);
 
     /* Local variables */
-    integer i__ = {}, j = {}, k = {}, l = {};
-    doublereal p = {}, r__ = {}, c1 = {}, c2 = {}, c3 = {}, c4 = {}, f1 = {}, 
-	    f2 = {}, f3 = {};
-    integer i1 = {}, i2 = {}, i3 = {}, j1 = {}, j2 = {}, l1 = {};
-    doublereal p1 = {}, p2 = {}, p3 = {};
-    integer l2 = {}, l3 = {}, l4 = {};
-    doublereal u2 = {}, u3 = {};
-    integer la = {};
-    doublereal co = {};
-    integer ii = {}, lf = {}, il = {};
-    doublereal pi = {};
-    integer in = {};
-    doublereal si = {};
-    integer lh = {}, ll = {};
-    doublereal hu[4] = {}, wi = {}, rn = {};
-    integer lu = {};
-    doublereal sq = {}, zi = {};
-    integer lv = {};
-    doublereal hv[4] = {}, uu = {}, pi2 = {};
-    integer nr1 = {}, nu4 = {}, nv4 = {};
-    doublereal acc = {}, fac = {}, arg = {}, one = {}, hui = {}, huj = {}, 
-	    eps = {}, ten = {};
-    integer jlu = {};
-    doublereal piv = {};
-    integer num = {}, nrr = {};
-    doublereal fac1 = {}, fac2 = {}, two = {};
-    integer nvv = {}, nuu = {}, ich1 = {}, ich3 = {};
-    doublereal con1 = {}, con4 = {}, con9 = {};
-    integer num1 = {};
-    doublereal half = {};
-    integer ncof = {};
-    doublereal dmax__ = {};
-    integer ipar = {}, nreg = {}, rank = {}, iter = {};
-    doublereal fpms = {}, pinv = {};
-    integer irot = {}, jrot = {}, ipar1 = {}, iband = {}, ncoff = {};
-    doublereal sigma = {}, three = {}, fpmax = {}, ratio = {};
-    integer numin = {}, nvmin = {}, nrint = {};
-    doublereal store = {};
-    integer iband3 = {}, iband4 = {}, lwest = {}, iband1 = {};
+    integer i__ = {0}, j = {0}, k = {0}, l = {0};
+    doublereal p = {0}, r__ = {0}, c1 = {0}, c2 = {0}, c3 = {0}, c4 = {0}, f1 
+	    = {0}, f2 = {0}, f3 = {0};
+    integer i1 = {0}, i2 = {0}, i3 = {0}, j1 = {0}, j2 = {0}, l1 = {0};
+    doublereal p1 = {0}, p2 = {0}, p3 = {0};
+    integer l2 = {0}, l3 = {0}, l4 = {0};
+    doublereal u2 = {0}, u3 = {0};
+    integer la = {0};
+    doublereal co = {0};
+    integer ii = {0}, lf = {0}, il = {0};
+    doublereal pi = {0};
+    integer in = {0};
+    doublereal si = {0};
+    integer lh = {0}, ll = {0};
+    doublereal hu[4] = {}, wi = {0}, rn = {0};
+    integer lu = {0};
+    doublereal sq = {0}, zi = {0};
+    integer lv = {0};
+    doublereal hv[4] = {}, uu = {0}, pi2 = {0};
+    integer nr1 = {0}, nu4 = {0}, nv4 = {0};
+    doublereal acc = {0}, fac = {0}, arg = {0}, one = {0}, hui = {0}, huj = {
+	    0}, eps = {0}, ten = {0};
+    integer jlu = {0};
+    doublereal piv = {0};
+    integer num = {0}, nrr = {0};
+    doublereal fac1 = {0}, fac2 = {0}, two = {0};
+    integer nvv = {0}, nuu = {0}, ich1 = {0}, ich3 = {0};
+    doublereal con1 = {0}, con4 = {0}, con9 = {0};
+    integer num1 = {0};
+    doublereal half = {0};
+    integer ncof = {0};
+    doublereal dmax__ = {0};
+    integer ipar = {0}, nreg = {0}, rank = {0}, iter = {0};
+    doublereal fpms = {0}, pinv = {0};
+    integer irot = {0}, jrot = {0}, ipar1 = {0}, iband = {0}, ncoff = {0};
+    doublereal sigma = {0}, three = {0}, fpmax = {0}, ratio = {0};
+    integer numin = {0}, nvmin = {0}, nrint = {0};
+    doublereal store = {0};
+    integer iband3 = {0}, iband4 = {0}, lwest = {0}, iband1 = {0};
     extern /* Recursive Subroutine */ int fpback_(doublereal *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *), fpdisc_(
 	    doublereal *, integer *, integer *, doublereal *, integer *), 
