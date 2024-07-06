@@ -1978,8 +1978,12 @@ list_decls(FILE *outfile)
 			comment = wr_ardecls(outfile, var->vdim, 1L);
 		}
 		if (is_recursive && vclass != CLPROC) {
-			// add initializers for non static variables that aren't functions
-			nice_printf (outfile, " = {}");
+			if (var -> vdim) {
+				// add initializers for non static variables that aren't functions
+				nice_printf (outfile, " = {}");
+			} else {
+				nice_printf (outfile, " = {0}");
+			}
 		}
 
 	    if (comment)
