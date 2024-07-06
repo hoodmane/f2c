@@ -922,6 +922,9 @@ dim_check(Namep q)
 	register struct Dimblock *vdim = q->vdim;
 	register expptr nelt;
 	nelt = vdim->nelt;
+	if (!nelt) {
+		return;
+	}
 	if (!ONEOF(nelt->headblock.vtype, MSKINT|MSKREAL))
 		bad_dimtype(q);
 	else if (ISINT(nelt->headblock.vtype)
