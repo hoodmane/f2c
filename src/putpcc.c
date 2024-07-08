@@ -1259,6 +1259,9 @@ should_add_ftnlen(expptr funcname) {
 	char *rest = buf + 2;
 
 #define C(str) strcmp(rest, str)
+	if (c1 == 'b') {
+		return C("dsqr");
+	}
 
 	if (c1 == 'g') {
 		// "gbtrs", "gemm", "gesdd", "getrs", "ggbak", "gghrd"
