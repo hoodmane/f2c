@@ -1251,7 +1251,7 @@ should_add_ftnlen(expptr funcname) {
 	// Skip lsame or lsame_
 #define C(str) strcmp(buf, str)
 	if ((c0 != 'c') && (c0 != 'd') && (c0 != 's') && (c0 != 'z')) {
-		return C("aprod") && C("left") && C("lsame") && C("ovwr");
+		return C("aprod") && C("left") && C("lsame");
 	}
 #undef C
 	char c1 = buf[1];
@@ -1259,7 +1259,7 @@ should_add_ftnlen(expptr funcname) {
 
 #define C(str) strcmp(rest, str)
 	if (c1 == 'b') {
-		return C("dqr") && C("dsdc") && C("dsqr") && C("svdstep");
+		return C("dsdc") && C("dsqr") && C("svdstep");
 	}
 
 	if (c1 == 'g') {
@@ -1278,9 +1278,6 @@ should_add_ftnlen(expptr funcname) {
 	if (c1 == 'o') {
 		// "ormqr", "orm2r",
 		return C("rmqr") && C("rm2r");
-	}
-	if (c1 == 'r') {
-		return C("itzvec");
 	}
 	if (c1 == 's') {
 		// "steqr", "stevr"
