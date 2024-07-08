@@ -1249,23 +1249,22 @@ should_add_ftnlen(expptr funcname) {
 		return 1;
 	}
 	// Skip lsame or lsame_
-	if (c0 == 'l') {
-		return strcmp(buf, "lsame") != 0;
-	}
+#define C(str) strcmp(buf, str)
 	if ((c0 != 'c') && (c0 != 'd') && (c0 != 's') && (c0 != 'z')) {
-		return 1;
+		return C("aprod") && C("left") && C("lsame") && C("ovwr");
 	}
+#undef C
 	char c1 = buf[1];
 	char *rest = buf + 2;
 
 #define C(str) strcmp(rest, str)
 	if (c1 == 'b') {
-		return C("dsqr");
+		return C("dqr") && C("dsdc") && C("dsqr") && C("svdstep");
 	}
 
 	if (c1 == 'g') {
 		// "gbtrs", "gemm", "gesdd", "getrs", "ggbak", "gghrd"
-		return C("btrs") && C("emm") && C("esdd") && C("etrs") && C("emv") && C("gbak") && C("gbak");
+		return C("btrs") && C("emm") && C("emv") && C("esdd") && C("etrs") && C("gbak") && C("gbak");
 	}
 	if (c1 == 'l') {
 		// "lacpy", "lamch", "lanhs", "lanst", "larf", "lascl", "laset", "lasr", "lasrt",
@@ -1279,6 +1278,9 @@ should_add_ftnlen(expptr funcname) {
 	if (c1 == 'o') {
 		// "ormqr", "orm2r",
 		return C("rmqr") && C("rm2r");
+	}
+	if (c1 == 'r') {
+		return C("itzvec");
 	}
 	if (c1 == 's') {
 		// "steqr", "stevr"
